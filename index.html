@@ -8,45 +8,78 @@
     <title>Ohmyfood</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./scss/autre.css">
     <!-- lien de connection pour le kit Font Awesome pour les icones -->
     <script src="https://kit.fontawesome.com/7be78ce38e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div>
-            <h1 class="center">ohmyfood</h1>
+    <header> 
+        <div class="title-contenaire center">
+            <h1>ohmyfood</h1>
         </div>
-        <div class="direction-row contenaire-header">
-            <div class="geoloc">
-                <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
+        <div class="direction-row geo-contenaire">
+            <div class="geo-contenaire__logo">
+                <i class="fa-solid fa-location-dot" style="color: #353535;"></i>
             </div>
-            <div class="recherche">
-                <input type="text" name="recherche" class="recherche" placeholder="Paris, Belleville" size="15">
+            <div class="recherche" id="restaurants">
+                <input type="text" name="recherche" class="geo-contenaire__recherche" placeholder="Paris, Belleville" size="15">
             </div>
         </div>
     </header>
     <main>
+        <!-- Explorer **********************************************************************************-->
         <section>
-            <div class="direction-column contenaire-explorer">
+            <div class="explorer-contenaire direction-column">
                 <div class="center-text">
                     <h2>Réservez le menu qui vous convient</h2>
                     <p>Découvrez des restaurants d'exception sélectionnés par nos soins</p>
                 </div>
                 <div class="center">
-                    <div class="btn">
+                    <div class="btn-gradiant">
                         Explorer nos restaurants
                     </div>
                 </div>
             </div>  
         </section>
+        <!-- Fonctionnement *************************************************************************** -->
         <section class="direction-column center">
             <div>
-                <h2><b>Fonctionnement</b></h2>
+                <h2 class="titre__align">Fonctionnement</h2>
             </div>
-
+            <!-- Mobile -->
+            <div class="center">
+                <div class="btn-num">
+                    <p>1</p>
+                </div>
+                <div class="btn-fonct center">
+                    <div class="btn-fonct__align">
+                        <i class="fa-solid fa-mobile-screen-button" style="color: #7E7E7E;"></i>
+                        <p>Choisissez un restaurant</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Liste -->
+            <div class="center">
+                <div class="btn-fonct center">
+                    <div class="btn-fonct__align">
+                        <i class="fa-solid fa-list" style="color: #7E7E7E;"></i>
+                        <p>Composez votre menu</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Store -->
+            <div class="center">
+                <div class="btn-fonct center">
+                    <div class="btn-fonct__align">
+                        <i class="fa-solid fa-store" style="color: #9356DC;"></i>
+                        <p>Composez votre menu</p>
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- Restaurant ********************************************************************************-->
+
     </main>
 
     <footer>
