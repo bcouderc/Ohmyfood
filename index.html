@@ -6,17 +6,47 @@
     <!-- Permet de prendre en compte les différents dispositif d'affichage -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ohmyfood</title>
-    
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/autre.css">
     <!-- lien de connection pour le kit Font Awesome pour les icones -->
     <script src="https://kit.fontawesome.com/7be78ce38e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-
+        <div>
+            <h1 class="center">ohmyfood</h1>
+        </div>
+        <div class="direction-row contenaire-header">
+            <div class="geoloc">
+                <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
+            </div>
+            <div class="recherche">
+                <input type="text" name="recherche" class="recherche" placeholder="Paris, Belleville" size="15">
+            </div>
+        </div>
     </header>
     <main>
- 
+        <section>
+            <div class="direction-column contenaire-explorer">
+                <div class="center-text">
+                    <h2>Réservez le menu qui vous convient</h2>
+                    <p>Découvrez des restaurants d'exception sélectionnés par nos soins</p>
+                </div>
+                <div class="center">
+                    <div class="btn">
+                        Explorer nos restaurants
+                    </div>
+                </div>
+            </div>  
+        </section>
+        <section class="direction-column center">
+            <div>
+                <h2><b>Fonctionnement</b></h2>
+            </div>
+
+        </section>
     </main>
 
     <footer>
