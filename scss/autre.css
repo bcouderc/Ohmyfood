@@ -33,13 +33,16 @@ h2{
     font-weight: 700;
     line-height: normal;
 }
+h3{
+    line-height: 1%;
+}
 
 p{
     color: #353535;
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
-    line-height: normal;
+    line-height: 21px;
 }
 
 body{
@@ -201,7 +204,7 @@ body{
     align-content: space-between;
     border-radius: 15px;
     width: 340px;
-    height: 251px;
+    height: 260px;
     padding-bottom: 18px;
 }
 
@@ -222,7 +225,26 @@ body{
     border-radius: 15px 15px 0 0;
 }
 
-/**/
+.resto-cards--align{
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25px;
+}
+
+.resto-cards--align-heart{  
+    position: relative;
+    z-index: 1;
+}
+
+.resto-cards--align-text{
+    position: relative;
+    z-index: 2;
+    padding-left: 10px;
+}
+
+/*---------------------*/
+/* = Pied de page      */
+/*---------------------*/
 .pied-de-page{
     display: flex;
     height: 240px;
