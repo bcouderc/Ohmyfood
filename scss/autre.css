@@ -3,13 +3,14 @@ Polices :
     Logo et titres : Shrikhand
     Texte : Roboto
 
+voir le fichier couleur
 Couleurs :
     Primaire :      #9356DC
     Secondaire :    #FF9DA
     Tertiaire :     #99E2D0
     Localisation :  #EAEAEA
     Section :       #F6F6F6
-    Paragraphe :    #353535
+    Paragraphe / pied de page :    #353535
     
 
 */
@@ -26,14 +27,20 @@ h1{
 
 h2{
     color: #000;
-    font-size: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
     font-weight: 700;
+    line-height: normal;
 }
 
 p{
-    color: var(--Grey, #353535);
-    font-size: 18px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
     font-weight: 300;
+    line-height: normal;
 }
 
 body{
@@ -55,7 +62,7 @@ body{
     flex-direction: row;
 }
 
-.direction-column{
+.direction{
     display: flex;
     flex-direction: column;
 }
@@ -64,14 +71,18 @@ body{
 /* = Header            */
 /*---------------------*/
 .title-contenaire{
+    position: relative;
+    z-index: 2;
     display: flex;
     padding: 14px 89px 13px 89px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15); 
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.205); 
     background: var(--White, #FFF);
 }
 
 /* Zone de recherche*/
 .geo-contenaire{
+    position: relative;
+    z-index: 1;
     width: 375px;
     height: 50px;
     justify-content: center;
@@ -120,27 +131,39 @@ body{
 /*---------------------*/
 
 .btn-fonct{
+    position: relative;
+    z-index: 1;
     width: 320px;
     height: 72px;
+    left: -25px;
     margin-bottom: 30px;
     border-radius: 20px;
     background: var(--Background, #F6F6F6);
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+ 
 }
 
 .btn-fonct__align{
     display: flex;
     align-items: center;
-    margin-right: 20px;
     gap: 20px;
 }
 
 
 .btn-num{
-    width: 24px;
-    height: 24px;
-    border-radius: 15px;
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
     background-color: #9356DC;
+    left: -10px;
+    color: #FFF;
+    margin-left: 35px;
 }
 
 .titre__align{
@@ -191,29 +214,46 @@ body{
     border-radius: 15px 15px 0 0;
 }
 
-
-
-/*test d'animation livre*/
-.menu li{
-    list-style: none;
+/**/
+.pied-de-page{
+    display: flex;
+    height: 220px;
+    flex-direction: column;
+    background: var(--Grey, #353535);
 }
 
-.menu a{
-    display: inline-block;
-    padding: 8px 12px;
-    border: 2px solid #fff;
-    text-shadow: 0px 0px 6px #777;
-    background: #98B924;
-    color: #fff;
-    text-decoration: none;
-
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition-delay: all .5s;
-    transition: all .5s;
+.pied-de-page--titre{
+    display: flex;
+    height: 27px;
+    padding: 22px 25px;
 }
 
-menu a:hover, .menu a:focus{
-    padding-right: 150px;
-    background: #b8da40;
+.pied-de-page--texte{
+    color: var(--White, #FFF);
+    font-family: Shrikhand;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pied-de-page--liste{
+    color: var(--White, #FFF);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1px;
+}
+
+.pied-de-page--align-ico{
+    display: flex;
+    align-items: center;    
+}
+
+
+.pied-de-page--align{
+    display: flex;
+    align-content: center;
+    gap: 10px;
 }
