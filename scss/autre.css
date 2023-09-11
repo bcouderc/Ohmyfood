@@ -68,14 +68,18 @@ body{
     flex-direction: column;
 }
 
+a{
+    text-decoration: none;
+}
 /*---------------------*/
 /* = Header            */
 /*---------------------*/
 .title-contenaire{
     position: relative;
+    height: 60px;
+    align-items: center;
     z-index: 2;
     display: flex;
-    padding: 14px 89px 13px 89px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.205); 
     background: var(--White, #FFF);
 }
@@ -84,7 +88,7 @@ body{
 .geo-contenaire{
     position: relative;
     z-index: 1;
-    height: 50px;
+    height: 60px;
     justify-content: center;
     align-items: center; 
     background-color:#EAEAEA;
@@ -99,7 +103,7 @@ body{
 
 /* Section : Explorer */
 .explorer-contenaire{
-    height: 287PX; 
+    height: 250PX; 
     background-color: #F6F6F6;
 }
 
@@ -221,6 +225,8 @@ body{
 }
 
 .cards-img{
+    width: 340px;
+    height: 251px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }

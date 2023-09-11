@@ -1,0 +1,15 @@
+/**/
+
+.contenaire-img{
+    width: 375px;
+    height: 275px;
+    background: lightgray 50% / cover no-repeat;
+    flex-shrink: 0;
+}
+
+.img{
+    width: 375px;
+    height: 275px;
+    object-fit: cover;
+}
+
