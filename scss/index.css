@@ -150,10 +150,31 @@
     margin-right: 15px;
 }
 .cards-img{
+    position: relative;
+    z-index: 1;
     width: 340px;
     height: 160px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
+}
+
+.badge{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    width: 80px;
+    height: 29px;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #99e2d0;
+    margin-top: 15px;
+    margin-left: 245px;
+    border-radius: 2px;
+}
+
+.badge__txt{
+    color: #008766;
+    margin: auto;
 }
 
 /* Poistionnement des images par rapports au contenaire*/
