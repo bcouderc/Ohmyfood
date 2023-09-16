@@ -1,15 +1,3 @@
-/*---------------------*/
-/* = Header            */
-/*---------------------*/
-.title-contenaire{
-    position: relative;
-    height: 60px;
-    align-items: center;
-    z-index: 2;
-    display: flex;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.205); 
-    background: var(--White, #FFF);
-}
 
 /* Section : Zone de recherche*/
 .geo-contenaire{
@@ -121,7 +109,15 @@
     justify-content: space-between;
     background-color: #f6f6f6;
 }
+.cards{
+    height: 251px;
 
+    /*propriété qui définit comment gérer le dépassement du contenu d'un élément dans son bloc*/
+    overflow: hidden;
+
+    background-color: #FFF;
+    border-radius: 15px;
+}
 .cards-contenaire{
     display: flex;
     justify-content: center;
@@ -132,36 +128,34 @@
 }
 
 .resto-cards{
-    align-content: space-between;
-    border-radius: 15px;
-    width: 340px;
     height: 260px;
     padding-bottom: 18px;
 }
-
-.resto-cards__img{
-    width: 100%;
-    height: auto;
-    align-self: stretch;
-    border-radius: 15px;
+.resto-cards__cont{
+    display: flex;
+    justify-content: space-between;
+    height: 72px;
+    line-height: 1px;
 } 
 
-.cards{
-    height: 251px;
-
-    /*propriété qui définit comment gérer le dépassement du contenu d'un élément dans son bloc*/
-    overflow: hidden;
-
-    background-color: #FFF;
-    border-radius: 15px;
+.resto-cards__text{
+    display: flex;
+    margin-left: 10px;
 }
 
+.resto-cards__heart{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 15px;
+}
 .cards-img{
     width: 340px;
     height: 160px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
+
 /* Poistionnement des images par rapports au contenaire*/
 .img-lapalette{
     object-position: 0 -50px;
@@ -173,64 +167,5 @@
     object-position: 0 -80px;
 }
 
-.resto-cards--align{
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 25px;
-}
 
-.resto-cards--align-heart{  
-    position: relative;
-    z-index: 1;
-}
 
-.resto-cards--align-text{
-    position: relative;
-    z-index: 2;
-    padding-left: 10px;
-}
-
-/*---------------------*/
-/* = Pied de page      */
-/*---------------------*/
-.pied-de-page{
-    display: flex;
-    height: 240px;
-    flex-direction: column;
-    background: var(--Grey, #353535);
-}
-
-.pied-de-page--titre{
-    display: flex;
-    height: 27px;
-    padding: 22px 25px;
-}
-
-.pied-de-page--texte{
-    color: var(--White, #FFF);
-    font-family: Shrikhand;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.pied-de-page--liste{
-    color: var(--White, #FFF);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1px;
-}
-
-.pied-de-page--align-ico{
-    display: flex;
-    align-items: center;    
-}
-
-.pied-de-page--align{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
