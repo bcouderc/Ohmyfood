@@ -152,6 +152,9 @@
     border-radius: 15px 15px 0 0;
 }
 
+/*---------------------*/
+/* == Badge Nouveau    */
+/*---------------------*/
 .badge{
     position: absolute;
     z-index: 2;
@@ -171,7 +174,7 @@
     margin: auto;
 }
 
-/* Poistionnement des images par rapports au contenaire*/
+/* Positionnement des images par rapports au contenaire*/
 .img-lapalette{
     object-position: 0 -50px;
 }
