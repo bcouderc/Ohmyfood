@@ -1,189 +1,193 @@
-
+@charset "UTF-8";
 /*---------------------*/
 /* = Header            */
 /*---------------------*/
-.title-contenaire{
-    position: relative;
-    height: 63px;
-    align-items: center;
-    z-index: 2;
-    display: flex;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.205); 
-    background: var(--White, #FFF);
+.title-contenaire {
+  position: relative;
+  height: 63px;
+  align-items: center;
+  z-index: 2;
+  display: flex;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.205);
+  background: var(--White, #FFF);
 }
+
 /* Section : Zone de recherche*/
-.geo-contenaire{
-    position: relative;
-    z-index: 1;
-    height: 60px;
-    justify-content: center;
-    align-items: center; 
-    background-color:#EAEAEA;
+.geo-contenaire {
+  position: relative;
+  z-index: 1;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAEAEA;
 }
-.geo-contenaire__logo{
-    margin-right: 17px;
+.geo-contenaire__logo {
+  margin-right: 17px;
 }
-.geo-contenaire__recherche{
-    background-color: transparent;
-    border:0;
+
+.geo-contenaire__recherche {
+  background-color: transparent;
+  border: 0;
 }
 
 /* Section : Explorer */
-.explorer-contenaire{
-    height: 250PX; 
-    background-color: #F6F6F6;
+.explorer-contenaire {
+  height: 250PX;
+  background-color: #F6F6F6;
 }
 
-.explorer--h2{
-    font-size: 24px;
+.explorer--h2 {
+  font-size: 24px;
 }
 
-.explorer--p{
-    font-size: 18px;
+.explorer--p {
+  font-size: 18px;
 }
 
 /*---------------------*/
 /* = Fonctionnement    */
 /*---------------------*/
-
-.btn-fonct{
-    position: relative;
-    z-index: 1;
-    width: 320px;
-    height: 72px;
-    left: -25px;
-    border-radius: 20px;
-    background: var(--Background, #F6F6F6);
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+.btn-fonct {
+  position: relative;
+  z-index: 1;
+  width: 320px;
+  height: 72px;
+  left: -25px;
+  border-radius: 20px;
+  background: var(--Background, #F6F6F6);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.btn-fonct__align {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.btn-fonct__align{
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.btn-num {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #9356DC;
+  left: -10px;
+  color: #FFF;
+  margin-left: 35px;
+}
+.btn-num__align {
+  display: flex;
+  align-items: center;
 }
 
-.btn-num{
-    position: relative;
-    z-index: 2;
-    display: flex;
-    width: 30px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color: #9356DC;
-    left: -10px;
-    color: #FFF;
-    margin-left: 35px;
+.btn--align {
+  margin-bottom: 30px;
 }
 
-.btn-num--align{
-    display: flex;
-    align-items: center;
-}
-.btn--align{
-    margin-bottom: 30px;
+.titre__align {
+  margin: 50px 0 20px 20px;
 }
 
-.titre__align{
-    margin: 50px 0 20px 20px;
-}
-
-.fonct--p{
-    font-size: 16px;
+.fonct--p {
+  font-size: 16px;
 }
 
 /*---------------------*/
 /* = Restaurant        */
 /*---------------------*/
-
-.resto{
-    display: flex;
-    justify-content: space-between;
-    background-color: #f6f6f6;
-}
-.cards{
-    height: 240px;
-
-    /*propriété qui définit comment gérer le dépassement du contenu d'un élément dans son bloc*/
-    overflow: hidden;
-
-    background-color: #FFF;
-    border-radius: 15px;
-}
-.cards-contenaire{
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
-    flex-wrap: wrap;
-    flex-basis: auto;
-    align-self: stretch;
+.resto {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f6f6f6;
 }
 
-.resto-cards{
-    height: 260px;
-    padding-bottom: 18px;
-}
-.resto-cards__cont{
-    display: flex;
-    justify-content: space-between;
-    height: 72px;
-    line-height: 1px;
-} 
-
-.resto-cards__text{
-    display: flex;
-    margin-left: 10px;
+.cards {
+  height: 240px;
+  /*propriété qui définit comment gérer le dépassement du contenu d'un élément dans son bloc*/
+  overflow: hidden;
+  background-color: #FFF;
+  border-radius: 15px;
 }
 
-.resto-cards__heart{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-right: 15px;
+.cards-contenaire {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  align-self: stretch;
 }
-.cards-img{
-    position: relative;
-    z-index: 1;
-    width: 340px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
+
+.resto-cards {
+  height: 260px;
+  padding-bottom: 18px;
+}
+
+.resto-cards__cont {
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  line-height: 1px;
+}
+
+.resto-cards__text {
+  display: flex;
+  margin-left: 10px;
+}
+
+.resto-cards__heart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+
+.cards-img {
+  position: relative;
+  z-index: 1;
+  width: 340px;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
 }
 
 /*---------------------*/
 /* == Badge Nouveau    */
 /*---------------------*/
-.badge{
-    position: absolute;
-    z-index: 2;
-    display: flex;
-    width: 80px;
-    height: 29px;
-    align-items: center;
-    flex-shrink: 0;
-    background-color: #99e2d0;
-    margin-top: 15px;
-    margin-left: 245px;
-    border-radius: 2px;
+.badge {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  width: 80px;
+  height: 29px;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: #99e2d0;
+  margin-top: 15px;
+  margin-left: 245px;
+  border-radius: 2px;
 }
 
-.badge__txt{
-    color: #008766;
-    margin: auto;
+.badge__txt {
+  color: #008766;
+  margin: auto;
 }
 
 /* Positionnement des images par rapports au contenaire*/
-.img-lapalette{
-    object-position: 0 -50px;
-}
-.img-lanote{
-    object-position: 0 -160px;
-}
-.img-ledelice{
-    object-position: 0 -80px;
+.img-lapalette {
+  -o-object-position: 0 -50px;
+     object-position: 0 -50px;
 }
 
+.img-lanote {
+  -o-object-position: 0 -160px;
+     object-position: 0 -160px;
+}
 
-
+.img-ledelice {
+  -o-object-position: 0 -80px;
+     object-position: 0 -80px;
+}/*# sourceMappingURL=index.css.map */
