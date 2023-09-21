@@ -1,4 +1,13 @@
-/* INFORMATIONS DE BASE
+/* 
+SOMMAIRE
+1 - Balises : h1, h2, h3, p, a, body
+2 - Divers : alignement texte / div
+3 - Bouton-gradiant
+4 - Pied-de-page
+5 - Positionnement images
+
+
+INFORMATIONS DE BASE
 Polices :
     Logo et titres : Shrikhand
     Texte : Roboto
@@ -21,16 +30,14 @@ Couleurs :
 }
 
 h1 {
+  color: var(--Black, #101010);
   font-family: "Shrikhand", cursive;
 }
 
 h2 {
   color: #000;
   font-family: Roboto;
-  font-size: 24px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   margin: 0;
 }
 
@@ -42,7 +49,6 @@ h3 {
 p {
   color: #353535;
   font-family: Roboto;
-  font-style: normal;
   font-weight: 300;
   margin: 0;
 }
@@ -91,7 +97,6 @@ a {
   justify-content: center;
   color: white;
 }
-
 .btn-gradiant:hover {
   border-radius: 25px;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
@@ -107,14 +112,12 @@ a {
   flex-direction: column;
   background: var(--Grey, #353535);
 }
-
-.pied-de-page--titre {
+.pied-de-page__titre {
   display: flex;
   height: 27px;
   padding: 22px 25px;
 }
-
-.pied-de-page--texte {
+.pied-de-page__texte {
   color: var(--White, #FFF);
   font-family: Shrikhand;
   font-size: 18px;
@@ -122,8 +125,7 @@ a {
   font-weight: 400;
   line-height: normal;
 }
-
-.pied-de-page--liste {
+.pied-de-page__liste {
   color: var(--White, #FFF);
   font-family: Roboto;
   font-size: 16px;
@@ -131,14 +133,45 @@ a {
   font-weight: 500;
   line-height: 2em;
 }
-
-.pied-de-page--align-ico {
+.pied-de-page__align-ico {
   display: flex;
   align-items: center;
 }
-
-.pied-de-page--align {
+.pied-de-page__align {
   display: flex;
   align-items: center;
   gap: 10px;
-}/*# sourceMappingURL=autre.css.map */
+}
+
+/* Positionnement des images par rapports au contenaire*/
+.img-lapalette {
+  -o-object-position: 0 -50px;
+     object-position: 0 -50px;
+}
+.img-lapalette__2 {
+  -o-object-position: 0 -20px;
+     object-position: 0 -20px;
+}
+
+.img-lanote {
+  -o-object-position: 0 -160px;
+     object-position: 0 -160px;
+}
+
+.img-ledelice {
+  -o-object-position: 0 -80px;
+     object-position: 0 -80px;
+}
+.img-ledelice__2 {
+  -o-object-position: 0 -25px;
+     object-position: 0 -25px;
+}
+
+.img-alafrancaise {
+  -o-object-position: 0 -80px;
+     object-position: 0 -80px;
+}
+.img-alafrancaise__2 {
+  -o-object-position: 0 -20px;
+     object-position: 0 -20px;
+}

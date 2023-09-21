@@ -1,4 +1,13 @@
-/* INFORMATIONS DE BASE
+/* 
+SOMMAIRE
+1 - Balises : h1, h2, h3, p, a, body
+2 - Divers : alignement texte / div
+3 - Bouton-gradiant
+4 - Pied-de-page
+5 - Positionnement images
+
+
+INFORMATIONS DE BASE
 Polices :
     Logo et titres : Shrikhand
     Texte : Roboto
@@ -22,16 +31,14 @@ Couleurs :
 }
 
 h1{
+    color: var(--Black, #101010);
     font-family: 'Shrikhand', cursive;
 }
 
 h2{
     color: #000;
     font-family: Roboto;
-    font-size: 24px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     margin: 0;
 }
 h3{
@@ -42,7 +49,6 @@ h3{
 p{
     color: #353535;
     font-family: Roboto;
-    font-style: normal;
     font-weight: 300;
     margin: 0;
 }
@@ -89,14 +95,13 @@ a{
     align-items: center;
     justify-content: center;
     color: white;
+
+    &:hover{
+        border-radius: 25px;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+    } 
 }
-
-.btn-gradiant:hover{
-    border-radius: 25px;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-} 
-
 
 /*---------------------*/
 /* = Pied de page      */
@@ -106,39 +111,67 @@ a{
     height: 230px;
     flex-direction: column;
     background: var(--Grey, #353535);
+
+    &__titre{
+        display: flex;
+        height: 27px;
+        padding: 22px 25px;
+    }
+
+    &__texte{
+        color: var(--White, #FFF);
+        font-family: Shrikhand;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__liste{
+        color: var(--White, #FFF);
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2em;
+    }
+
+    &__align-ico{
+        display: flex;
+        align-items: center;    
+    }
+
+    &__align{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
 }
 
-.pied-de-page--titre{
-    display: flex;
-    height: 27px;
-    padding: 22px 25px;
+/* Positionnement des images par rapports au contenaire*/
+.img-lapalette{
+    object-position: 0 -50px;
+
+    &__2{
+        object-position: 0 -20px;
+    }
+  }
+
+.img-lanote{
+    object-position: 0 -160px;
 }
 
-.pied-de-page--texte{
-    color: var(--White, #FFF);
-    font-family: Shrikhand;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
+.img-ledelice{
+    object-position: 0 -80px;
 
-.pied-de-page--liste{
-    color: var(--White, #FFF);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 2em;
+    &__2{
+       object-position: 0 -25px; 
+    }
 }
+.img-alafrancaise{
+    object-position: 0 -80px;
 
-.pied-de-page--align-ico{
-    display: flex;
-    align-items: center;    
-}
-
-.pied-de-page--align{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    &__2{
+        object-position: 0 -20px;
+    }
 }

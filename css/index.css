@@ -1,12 +1,21 @@
 @charset "UTF-8";
+/*
+SOMMAIRE
+
+1 - Header
+2 - Explorer
+3 - Fonctionnement
+4 - Restaurant (cards)
+5 - Badge Nouveau
+*/
 /*---------------------*/
 /* = Header            */
 /*---------------------*/
 .title-contenaire {
   position: relative;
+  z-index: 2;
   height: 63px;
   align-items: center;
-  z-index: 2;
   display: flex;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.205);
   background: var(--White, #FFF);
@@ -24,23 +33,29 @@
 .geo-contenaire__logo {
   margin-right: 17px;
 }
-
 .geo-contenaire__recherche {
   background-color: transparent;
   border: 0;
 }
 
-/* Section : Explorer */
+/*---------------------*/
+/* = Explorer          */
+/*---------------------*/
 .explorer-contenaire {
-  height: 250PX;
+  height: 300px;
   background-color: #F6F6F6;
 }
 
-.explorer--h2 {
-  font-size: 24px;
+.fonctionnement__txt {
+  font-size: 16px;
 }
 
-.explorer--p {
+.explorer__titre {
+  font-size: 24px;
+  margin: 30px 0 20px;
+}
+
+.explorer__txt {
   font-size: 18px;
 }
 
@@ -81,17 +96,12 @@
   display: flex;
   align-items: center;
 }
-
-.btn--align {
+.btn-num__centre {
   margin-bottom: 30px;
 }
 
 .titre__align {
   margin: 50px 0 20px 20px;
-}
-
-.fonct--p {
-  font-size: 16px;
 }
 
 /*---------------------*/
@@ -175,19 +185,3 @@
   color: #008766;
   margin: auto;
 }
-
-/* Positionnement des images par rapports au contenaire*/
-.img-lapalette {
-  -o-object-position: 0 -50px;
-     object-position: 0 -50px;
-}
-
-.img-lanote {
-  -o-object-position: 0 -160px;
-     object-position: 0 -160px;
-}
-
-.img-ledelice {
-  -o-object-position: 0 -80px;
-     object-position: 0 -80px;
-}/*# sourceMappingURL=index.css.map */
