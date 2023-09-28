@@ -1,8 +1,121 @@
 /********************************************************************/
 /********* Medium devices (tablettes - desktop / minimum : 1024px) **/
 /********************************************************************/
-@media (min-width: 1024px) {
+/*
+Couleurs :
+    Primaire :      #9356DC
+    Secondaire :    #FF79DA
+    Tertiaire :     #99E2D0
+    Localisation :  #EAEAEA
+    Section :       #F6F6F6
+    Paragraphe / pied de page :    #353535
+
+    */
+@media (min-width: 1400px) {
   body {
     max-width: 1440px;
+    margin: auto;
+  }
+  .media-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .media-row__align {
+    justify-content: center;
+    margin: auto;
+  }
+  direction2 {
+    display: flex;
+    flex-direction: row;
+  }
+  /*------------------------------*/
+  /* = Index                      */
+  /*------------------------------*/
+  .vignettes {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  .vignettes__align {
+    gap: 80px;
+  }
+  .cards-img {
+    width: 490px;
+    height: 161px;
+  }
+  .badge {
+    margin-left: 390px;
+  }
+  /*------------------------------*/
+  /* = Restaurants                */
+  /*------------------------------*/
+  .contenaire {
+    width: 1055px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    top: 80px;
+  }
+  .contenaire__menu {
+    display: flex;
+  }
+  .align_txt {
+    justify-content: center;
+  }
+  .menu {
+    width: 634px;
+  }
+  .menu__m-align {
+    margin: auto;
+  }
+  .img {
+    width: 1440px;
+    height: 320px;
+  }
+  .img__contenaire {
+    margin: auto;
+  }
+  /*------------------------------*/
+  /* = Pied de page               */
+  /*------------------------------*/
+  .pied-de-page {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 114px;
+    top: 80px;
+  }
+  .pied-de-page__m-align {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .pied-de-page__m-titre {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 30px;
+    gap: 70px;
+  }
+  /*------------------------------*/
+  /* = Positionnement des images  */
+  /*------------------------------*/
+  .img-lapalette__2 {
+    -o-object-position: 0 -400px;
+       object-position: 0 -400px;
+  }
+  .img-alafrancaise__2 {
+    -o-object-position: 0 -20px;
+       object-position: 0 -20px;
+  }
+  .img-ledelice__2 {
+    -o-object-position: 0 -25px;
+       object-position: 0 -25px;
+  }
+  .img-lanote {
+    -o-object-position: 0 -160px;
+       object-position: 0 -160px;
   }
 }

@@ -7,6 +7,14 @@ SOMMAIRE
 3 - Fonctionnement
 4 - Restaurant (cards)
 5 - Badge Nouveau
+
+Couleurs :
+    Primaire :      #9356DC
+    Secondaire :    #FF79DA
+    Tertiaire :     #99E2D0
+    Localisation :  #EAEAEA
+    Section :       #F6F6F6
+    Paragraphe / pied de page :    #353535
 */
 /*---------------------*/
 /* = Header            */
@@ -17,7 +25,7 @@ SOMMAIRE
   height: 63px;
   align-items: center;
   display: flex;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.205);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.204);
   background: var(--White, #FFF);
 }
 
@@ -65,17 +73,22 @@ SOMMAIRE
 .btn-fonct {
   position: relative;
   z-index: 1;
+  margin: auto;
   width: 320px;
   height: 72px;
-  left: -25px;
   border-radius: 20px;
+  left: -25px;
   background: var(--Background, #F6F6F6);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3 ease-out;
 }
 .btn-fonct__align {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.btn-fonct:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.27);
 }
 
 .btn-num {
@@ -110,14 +123,14 @@ SOMMAIRE
 .resto {
   display: flex;
   justify-content: space-between;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
 }
 
 .cards {
   height: 240px;
   /*propriété qui définit comment gérer le dépassement du contenu d'un élément dans son bloc*/
   overflow: hidden;
-  background-color: #FFF;
+  background-color: white;
   border-radius: 15px;
 }
 
@@ -134,19 +147,16 @@ SOMMAIRE
   height: 260px;
   padding-bottom: 18px;
 }
-
 .resto-cards__cont {
   display: flex;
   justify-content: space-between;
   height: 72px;
   line-height: 1px;
 }
-
 .resto-cards__text {
   display: flex;
   margin-left: 10px;
 }
-
 .resto-cards__heart {
   display: flex;
   align-items: center;
@@ -175,7 +185,7 @@ SOMMAIRE
   height: 29px;
   align-items: center;
   flex-shrink: 0;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   margin-top: 15px;
   margin-left: 245px;
   border-radius: 2px;

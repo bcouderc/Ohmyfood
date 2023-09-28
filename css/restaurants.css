@@ -5,7 +5,18 @@ SOMMAIRE
 3 - Titre de la page
 4 - Menu (et trait bleu)
 5 - Vignettes des menus
+
 */
+/*
+Couleurs :
+    Primaire :      #9356DC
+    Secondaire :    #FF79DA
+    Tertiaire :     #99E2D0
+    Localisation :  #EAEAEA
+    Section :       #F6F6F6
+    Paragraphe / pied de page :    #353535
+
+    */
 /*-----------------------*/
 /* = Header              */
 /*-----------------------*/
@@ -13,12 +24,15 @@ SOMMAIRE
   font-size: 28px;
   font-weight: 400;
 }
+.header__titre-align {
+  margin: auto;
+}
 
 .header__go-back {
   display: flex;
   align-items: center;
   justify-items: flex-start;
-  margin: 0 70px 0 17px;
+  margin: 0 0 0 17px;
 }
 
 /*-----------------------*/
@@ -124,6 +138,6 @@ SOMMAIRE
 }
 .menu__euro-align {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   margin-right: 15px;
 }

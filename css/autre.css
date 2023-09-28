@@ -12,10 +12,9 @@ Polices :
     Logo et titres : Shrikhand
     Texte : Roboto
 
-voir le fichier couleur
 Couleurs :
     Primaire :      #9356DC
-    Secondaire :    #FF9DA
+    Secondaire :    #FF79DA
     Tertiaire :     #99E2D0
     Localisation :  #EAEAEA
     Section :       #F6F6F6
@@ -110,7 +109,7 @@ a {
   display: flex;
   height: 230px;
   flex-direction: column;
-  background: var(--Grey, #353535);
+  background: #353535;
 }
 .pied-de-page__titre {
   display: flex;
@@ -121,7 +120,6 @@ a {
   color: var(--White, #FFF);
   font-family: Shrikhand;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
@@ -129,7 +127,6 @@ a {
   color: var(--White, #FFF);
   font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 2em;
 }

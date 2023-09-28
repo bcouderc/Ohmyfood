@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/autre.css">
-    <link rel="stylesheet" href="./css/index.css"> 
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/media.css">
     <!-- lien de connection pour le kit Font Awesome pour les icones -->
     <script src="https://kit.fontawesome.com/7be78ce38e.js" crossorigin="anonymous"></script>
 </head>
@@ -45,165 +46,177 @@
         </section>
 <!-- Fonctionnement *************************************************************************** -->
         <section class="direction center">
-            <div>
-                <h2 class="titre__align">Fonctionnement</h2>
-            </div>
-            <!-- Mobile -->                
-            <div class="center btn-num__centre">
-                <div class="btn-num__align">
-                    <p class="btn-num">1</p>
+            <div class="media-row__align">
+                <div>
+                    <h2 class="titre__align">Fonctionnement</h2>
                 </div>
-                <div class="btn-fonct center">
-                    <div class="btn-fonct__align">
-                        <i class="fa-solid fa-mobile-screen-button" style="color: #7E7E7E;"></i>
-                        <p class="fonctionnement__txt">Choisissez un restaurant</p>
+                <div class="media-row">
+                <!-- Mobile -->                
+                    <div class="center btn-num__centre">
+                        <div class="btn-num__align">
+                            <p class="btn-num">1</p>
+                        </div>
+                        <div class="btn-fonct center">
+                            <div class="btn-fonct__align">
+                                <i class="fa-solid fa-mobile-screen-button" style="color: #7E7E7E;"></i>
+                                <p class="fonctionnement__txt">Choisissez un restaurant</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- Liste *************************************************************************-->
-            <div class="center btn-num__centre">
-                <div class="btn-num__align">
-                    <p class="btn-num">2</p>
-                </div>
-                <div class="btn-fonct center">
-                    <div class="btn-fonct__align">
-                        <i class="fa-solid fa-list" style="color: #7E7E7E;"></i>
-                        <p class="fonctionnement__txt">Composez votre menu</p>
+                    <!-- Liste *************************************************************************-->
+                    <div class="center btn-num__centre">
+                        <div class="btn-num__align">
+                            <p class="btn-num">2</p>
+                        </div>
+                        <div class="btn-fonct center">
+                            <div class="btn-fonct__align">
+                                <i class="fa-solid fa-list" style="color: #7E7E7E;"></i>
+                                <p class="fonctionnement__txt">Composez votre menu</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- Store -->
-            <div class="center btn-num__centre">
-                <div class="btn-num__align">
-                    <p class="btn-num">3</p>
-                </div>
-                <div class="btn-fonct center">
-                    <div class="btn-fonct__align">
-                        <i class="fa-solid fa-store" style="color: #7E7E7E;"></i>
-                        <p class="fonctionnement__txt">Dégustez au restaurant</p>
+                    <!-- Store -->
+                    <div class="center btn-num__centre">
+                        <div class="btn-num__align">
+                            <p class="btn-num">3</p>
+                        </div>
+                        <div class="btn-fonct center">
+                            <div class="btn-fonct__align">
+                                <i class="fa-solid fa-store" style="color: #7E7E7E;"></i>
+                                <p class="fonctionnement__txt">Dégustez au restaurant</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 <!-- Restaurant ********************************************************************************-->
         <section class="direction resto">
-            <h2 class="titre__align" id="restaurants">Restaurants</h2>
-            <div class="cards-contenaire">
-            <!-- La palette du gout------------------------------------------------------->
-                <div class="resto-cards">
-                    <article class="cards">
-                        <a href="./restaurants/menu-la_palette_du_gout.html">
-                            <div>
-                            <!-- Badge Nouveau ------------------------------------------->
-                                <div class="badge">
-                                    <p class="badge__txt">Nouveau</p>
+            <div class="vignettes">
+                <h2 class="titre__align" id="restaurants">Restaurants</h2>
+                <div class="cards-contenaire vignettes__align">
+                <!-- La palette du gout------------------------------------------------------->
+                    <div class="resto-cards">
+                        <article class="cards">
+                            <a href="./restaurants/menu-la_palette_du_gout.html">
+                                <div>
+                                <!-- Badge Nouveau ------------------------------------------->
+                                    <div class="badge">
+                                        <p class="badge__txt">Nouveau</p>
+                                    </div>
+                                    <img src="./images/laPaletteDuGout.jpg" class="cards-img img-lapalette" alt="Restaurant : La palette du goût">
+                                </div>         
+                                <div class="direction-row resto-cards__cont">
+                                    <div class="direction resto-cards__text">
+                                        <h3>La palette du goût</h3>
+                                        <p>Ménilmontant</p>
+                                    </div>
+                                    <div class="resto-cards__heart">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 512 512">
+                                            <path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
+                                        </svg>  
+                                    </div>
                                 </div>
-                                <img src="./images/laPaletteDuGout.jpg" class="cards-img img-lapalette" alt="Restaurant : La palette du goût">
-                            </div>         
-                            <div class="direction-row resto-cards__cont">
-                                <div class="direction resto-cards__text">
-                                    <h3>La palette du goût</h3>
-                                    <p>Ménilmontant</p>
+                            </a>
+                        </article>
+                    </div>
+                <!-- La note enchantée ------------------------------------------------------->
+                    <div class="resto-cards">
+                        <article class="cards">
+                            <a href="./restaurants/menu-la_note_enchantee.html">
+                                <div>
+                                <!-- Badge Nouveau ------------------------------------------->
+                                    <div class="badge">
+                                        <p class="badge__txt">Nouveau</p>
+                                    </div>
+                                    <img src="./images/laNoteEnchantee.jpg" class="cards-img img-lanote" alt="Restaurant : La note enchantée">
                                 </div>
-                                <div class="resto-cards__heart">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 512 512">
-                                        <path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
-                                    </svg>  
+                                <div class="direction-row resto-cards__cont">
+                                    <div class="direction resto-cards__text">
+                                        <h3>La note enchantée</h3>
+                                        <p>Charonne</p>
+                                    </div>
+                                    <div class="resto-cards__heart">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 512 512">
+                                            <path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
+                                        </svg>     
+                                    </div> 
                                 </div>
-                            </div>
-                        </a>
-                    </article>
-                </div>
-            <!-- La note enchantée ------------------------------------------------------->
-                <div class="resto-cards">
-                    <article class="cards">
-                        <a href="./restaurants/menu-la_note_enchantee.html">
-                            <div>
-                            <!-- Badge Nouveau ------------------------------------------->
-                                <div class="badge">
-                                    <p class="badge__txt">Nouveau</p>
+                            </a>    
+                        </article>
+                    </div>
+                <!-- A la française ---------------------------------------------------------->
+                    <div class="resto-cards">
+                        <article class="cards">
+                            <a href=".//restaurants/menu-a_la_francaise.html">
+                                <div>
+                                    <img src="./images/aLaFrancaise.jpg" class="cards-img" alt="Restaurant : A la francaise">
                                 </div>
-                                <img src="./images/laNoteEnchantee.jpg" class="cards-img img-lanote" alt="Restaurant : La note enchantée">
-                            </div>
-                            <div class="direction-row resto-cards__cont">
-                                <div class="direction resto-cards__text">
-                                    <h3>La note enchantée</h3>
-                                    <p>Charonne</p>
+                                <div class="direction-row resto-cards__cont">
+                                    <div class="direction resto-cards__text">
+                                        <h3>A la francaise</h3>
+                                        <p>Cité rouge</p>
+                                    </div>
+                                    <div class="resto-cards__heart">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 512 512">
+                                            <path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
+                                        </svg>     
+                                    </div>
                                 </div>
-                                <div class="resto-cards__heart">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 512 512">
-                                        <path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
-                                    </svg>     
-                                </div> 
-                            </div>
-                        </a>    
-                    </article>
-                </div>
-            <!-- A la française ---------------------------------------------------------->
-                <div class="resto-cards">
-                    <article class="cards">
-                        <a href=".//restaurants/menu-a_la_francaise.html">
-                            <div>
-                                <img src="./images/aLaFrancaise.jpg" class="cards-img" alt="Restaurant : A la francaise">
-                            </div>
-                            <div class="direction-row resto-cards__cont">
-                                <div class="direction resto-cards__text">
-                                    <h3>A la francaise</h3>
-                                    <p>Cité rouge</p>
+                            </a>
+                        </article>
+                    </div>
+                <!-- Le délice des sens ------------------------------------------------------>
+                    <div class="resto-cards">
+                        <article class="cards">
+                            <a href="./restaurants/menu-le_delice_des_sens.html">
+                                <div>
+                                    <img src="./images/leDelicesDesSens.jpg" class="cards-img img-ledelice" alt="Restaurant : Le délices des sens">
+                                </div>    
+                                <div class="direction-row resto-cards__cont">
+                                    <div class="direction resto-cards__text">
+                                        <h3>Le délice des sens</h3>
+                                        <p>Folie-Méricourt</p>
+                                    </div>
+                                    <div class="resto-cards__heart">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 512 512">
+                                            <path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
+                                        </svg>     
+                                    </div>
                                 </div>
-                                <div class="resto-cards__heart">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 512 512">
-                                        <path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
-                                    </svg>     
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                </div>
-            <!-- Le délice des sens ------------------------------------------------------>
-                <div class="resto-cards">
-                    <article class="cards">
-                        <a href="./restaurants/menu-le_delice_des_sens.html">
-                            <div>
-                                <img src="./images/leDelicesDesSens.jpg" class="cards-img img-ledelice" alt="Restaurant : Le délices des sens">
-                            </div>    
-                            <div class="direction-row resto-cards__cont">
-                                <div class="direction resto-cards__text">
-                                    <h3>Le délice des sens</h3>
-                                    <p>Folie-Méricourt</p>
-                                </div>
-                                <div class="resto-cards__heart">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 512 512">
-                                        <path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
-                                    </svg>     
-                                </div>
-                            </div>
-                        </a>
-                    </article>
+                            </a>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 <!-- Pied de page ------------------------------------------------------------------->
-    <footer>
-        <div class="pied-de-page">
-            <div class="pied-de-page__titre direction">
-               <h1 class="pied-de-page__texte">Ohmyfood</h1>
-               <div class="direction-row pied-de-page__align">
-                    <i class="fa-solid fa-utensils pied-de-page__align-ico" style="color: #FFF;"></i>
-                    <p class="pied-de-page__liste">Proposer un restaurant</p>
-               </div>
-               <div class="direction-row pied-de-page__align">
-                    <i class="fa-solid fa-handshake-angle pied-de-page__align-ico" style="color: #FFF;"></i>
-                    <p class="pied-de-page__liste">Devenir partenaire</p>
+<footer>
+    <div class="pied-de-page">
+        <div class="direction pied-de-page__titre">
+            <div class="pied-de-page__m-titre">
+                <div >
+                    <h1 class="pied-de-page__texte">Ohmyfood</h1>
                 </div>
-                <div>
-                    <p class="pied-de-page__liste">Mentions légales</p>
+                <div class="pied-de-page__m-align">    
+                    <div class="pied-de-page__align">
+                        <i class="fa-solid fa-utensils pied-de-page__align-ico" style="color: #FFF;"></i>
+                        <p class="pied-de-page__liste">Proposer un restaurant</p>
+                    </div>
+                    <div class="pied-de-page__align">
+                        <i class="fa-solid fa-handshake-angle pied-de-page__align-ico" style="color: #FFF;"></i>
+                        <p class="pied-de-page__liste">Devenir partenaire</p>
+                    </div>
+                    <div class="pied-de-page__align">
+                        <p class="pied-de-page__liste">Mentions légales</p>
+                    </div>
+                    <div class="pied-de-page__align">
+                        <p class="pied-de-page__liste"><a href="mailto:beatrice_couderc@orange.fr">Contact</a></p>
+                    </div>
                 </div>
-                <div>
-                    <p class="pied-de-page__liste"><a href="mailto:beatrice_couderc@orange.fr">Contact</a></p>
-                </div>
-           </div>  
-       </div>
-    </footer>
+            </div>
+        </div> 
+   </div>
+</footer>
 </body>
