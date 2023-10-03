@@ -8,7 +8,15 @@ SOMMAIRE
 5 - Badge Nouveau
 
 */
-@use "couleurs.scss";
+
+@use "./couleurs.scss";
+$col-loc:#EAEAEA;
+$col-pdpP:#353535;
+$col-primaire:#9356DC;
+$col-secondaire:#FF79DA;
+$col-tertiaire:#99E2D0;
+$col-txtNew:#008766;
+$col-sect:#F6F6F6;
 
 /*---------------------*/
 /* = Header            */
@@ -64,6 +72,22 @@ SOMMAIRE
 }
 
 /*---------------------*/
+/* = Animation coeur   */
+/*---------------------*/
+.my-heart-full{
+    position: absolute;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 200ms;
+
+    &:hover{
+        opacity: 1;
+        color: transparent;
+        background-clip: text;
+        background-image: linear-gradient(#9356DC -11.44%, #FF79DA 123.93%);
+    }
+}
+/*---------------------*/
 /* = Fonctionnement    */
 /*---------------------*/
 
@@ -90,8 +114,6 @@ SOMMAIRE
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.27);
     }
 }
-
-
 
 .btn-num{
     position: relative;

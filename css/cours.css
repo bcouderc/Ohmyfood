@@ -1,71 +1,124 @@
-@charset "UTF-8";
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
+/*
+Couleurs :
+    Primaire :      #9356DC
+    Secondaire :    #FF79DA
+    Tertiaire :     #99E2D0
+    Localisation :  #EAEAEA
+    Section :       #F6F6F6
+    Paragraphe / pied de page :    #353535
 
-html {
-  height: 100%;
-}
-
-body {
-  box-sizing: border-box;
-  background: #fff;
-  color: #15DEA5;
-  height: 100%;
-  font-family: "Montserrat", sans-serif;
-}
-
-.container {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.btn {
-  background: #011c37;
-  color: #15DEA5;
-  font-size: 3rem;
-  cursor: pointer;
-  padding: 1.85rem 3rem;
-  border-radius: 10rem;
-  width: 500px;
-  box-shadow: 0px 10px 2px 0px rgba(0, 0, 0, 0.4392156863);
-  /* déclarer une transition
-  transition-property: transform;
-  /* ajout d'un peu de fluidité à la transition
-  transition-duration: 400ms;
-  */
-  /*Equivalent des 2 lignes ci-dessus*/
-  transition: transform 400ms;
-}
-.btn:hover { /*transition déclenchée par un changement d'état*/
-  transform: scale(1.15);
-}
-
+    */
 /*--------------------------------------------*/
-.box {
-  margin: auto;
-  width: 320px;
-  height: 72px;
-  border-radius: 20px;
-  cursor: pointer;
-  box-shadow: 0 0 7px rgba(18, 18, 18, 0.5);
+/*.box{
+    margin: auto;
+    width: 320px;
+    height: 72px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 7px rgb(18, 18, 18, 0.5);
+
+    &::after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0 7px rgb(221, 146, 7);
+        opacity: 0;
+        transition: opacity 0.3s ease-out;
+    }
+
+    &:hover::after{
+        opacity: 1;
+    }
 }
-.box::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  box-shadow: 0 0 7px rgb(221, 146, 7);
+*/
+/* remplissage du coeur*/
+.heart {
+  position: absolute;
+}
+
+.my-heart-full {
   opacity: 0;
-  transition: opacity 0.3s ease-out;
+  transition: all 500ms ease-in-out;
 }
-.box:hover::after {
+.my-heart-full:hover {
   opacity: 1;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(#9356DC, #FF79DA);
 }
+
+/*
+.cloche{
+    width: 100px;
+    height: 200px;
+    display: block;
+    background-color: #303030;
+    position: relative;
+    margin: auto;
+
+    &-remplissage{
+        transition: all 0.3s linear 0s;
+        background-color: #33BEE5;
+        width: 0;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    &:hover &-remplissage{
+        height: 100%;
+    }
+}
+
+
+*/
+/*Test coeur remplissage V2-----------------*/
+/* *{
+    padding:0;
+    margin:0;
+}
+
+.container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#ececec;
+}
+
+.heart{
+    position:relative;
+    height:100px;
+    width:60px;
+    background:blue;
+    border-radius:100px 100px 0 0;
+    transform:rotate(45deg);
+    transition:all 0.5s;
+    cursor:pointer;
+}
+
+.heart:before{
+    content:'';
+    position:absolute;
+    background:#d16ba5;
+    height:100px;
+    width:60px;
+    transform:rotate(-90deg);
+    border-radius:100px 100px 0 0;
+    left:-20px;
+    top:20px;
+    transition:all 0.5s;
+}
+
+.heart:hover{
+    background:red;
+}
+
+.heart:hover::before{
+    background-color:red;
+}
+*/

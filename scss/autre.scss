@@ -13,7 +13,13 @@ Polices :
     Texte : Roboto
 
 */
-@use "couleurs.scss";
+$col-loc:#EAEAEA;
+$col-pdpP:#353535;
+$col-primaire:#9356DC;
+$col-secondaire:#FF79DA;
+$col-tertiaire:#99E2D0;
+$col-txtNew:#008766;
+$col-sect:#F6F6F6;
 
 *{
     font-family: 'Roboto', sans-serif;

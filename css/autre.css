@@ -12,15 +12,6 @@ Polices :
     Logo et titres : Shrikhand
     Texte : Roboto
 
-Couleurs :
-    Primaire :      #9356DC
-    Secondaire :    #FF79DA
-    Tertiaire :     #99E2D0
-    Localisation :  #EAEAEA
-    Section :       #F6F6F6
-    Paragraphe / pied de page :    #353535
-
-
 */
 * {
   font-family: "Roboto", sans-serif;
@@ -106,10 +97,9 @@ a {
 /* = Pied de page      */
 /*---------------------*/
 .pied-de-page {
-  display: flex;
-  height: 230px;
-  flex-direction: column;
+  height: 330px;
   background: #353535;
+  top: auto;
 }
 .pied-de-page__titre {
   display: flex;
@@ -140,7 +130,9 @@ a {
   gap: 10px;
 }
 
-/* Positionnement des images par rapports au contenaire*/
+/*------------------------------*/
+/* = Positionnement des images  */
+/*------------------------------*/
 .img-lapalette {
   -o-object-position: 0 -50px;
      object-position: 0 -50px;

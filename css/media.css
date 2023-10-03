@@ -1,16 +1,6 @@
 /********************************************************************/
 /********* Medium devices (tablettes - desktop / minimum : 1024px) **/
 /********************************************************************/
-/*
-Couleurs :
-    Primaire :      #9356DC
-    Secondaire :    #FF79DA
-    Tertiaire :     #99E2D0
-    Localisation :  #EAEAEA
-    Section :       #F6F6F6
-    Paragraphe / pied de page :    #353535
-
-    */
 @media (min-width: 1400px) {
   body {
     max-width: 1440px;

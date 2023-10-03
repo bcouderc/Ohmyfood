@@ -8,6 +8,8 @@ SOMMAIRE
 4 - Restaurant (cards)
 5 - Badge Nouveau
 
+*/
+/*
 Couleurs :
     Primaire :      #9356DC
     Secondaire :    #FF79DA
@@ -15,7 +17,8 @@ Couleurs :
     Localisation :  #EAEAEA
     Section :       #F6F6F6
     Paragraphe / pied de page :    #353535
-*/
+
+    */
 /*---------------------*/
 /* = Header            */
 /*---------------------*/
@@ -65,6 +68,23 @@ Couleurs :
 
 .explorer__txt {
   font-size: 18px;
+}
+
+/*---------------------*/
+/* = Animation coeur   */
+/*---------------------*/
+.my-heart-full {
+  position: absolute;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 200ms;
+}
+.my-heart-full:hover {
+  opacity: 1;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(#9356DC -11.44%, #FF79DA 123.93%);
 }
 
 /*---------------------*/
