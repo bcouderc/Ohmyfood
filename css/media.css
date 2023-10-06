@@ -1,7 +1,7 @@
 /********************************************************************/
 /********* Medium devices (tablettes - desktop / minimum : 1024px) **/
 /********************************************************************/
-@media (min-width: 500px) {
+@media (min-width: 200px) {
   body {
     max-width: 1440px;
     margin: auto;
