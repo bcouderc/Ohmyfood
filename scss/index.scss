@@ -16,7 +16,8 @@ $col-primaire:#9356DC;
 $col-secondaire:#FF79DA;
 $col-tertiaire:#99E2D0;
 $col-txtNew:#008766;
-$col-sect:#F6F6F6;
+$col-sect:#f6f6f6;
+$col-sect2:#FFF;
 
 /*---------------------*/
 /* = Header            */
@@ -74,7 +75,7 @@ $col-sect:#F6F6F6;
 /*---------------------*/
 /* = Animation coeur   */
 /*---------------------*/
-heart{
+.heart{
     position: absolute;
 }
 .my-heart-full{
@@ -113,6 +114,7 @@ heart{
     }
     
     &:hover{
+        background: $col-sect2;
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.27);
     }
 }

@@ -54,7 +54,7 @@ Couleurs :
 /*---------------------*/
 .explorer-contenaire {
   height: 300px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 .fonctionnement__txt {
@@ -73,7 +73,7 @@ Couleurs :
 /*---------------------*/
 /* = Animation coeur   */
 /*---------------------*/
-heart {
+.heart {
   position: absolute;
 }
 
@@ -100,7 +100,7 @@ heart {
   height: 72px;
   border-radius: 20px;
   left: -25px;
-  background: var(--Background, #F6F6F6);
+  background: var(--Background, #f6f6f6);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   transition: box-shadow 0.3 ease-out;
 }
@@ -110,6 +110,7 @@ heart {
   gap: 20px;
 }
 .btn-fonct:hover {
+  background: #FFF;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.27);
 }
 
@@ -145,7 +146,7 @@ heart {
 .resto {
   display: flex;
   justify-content: space-between;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 .cards {
