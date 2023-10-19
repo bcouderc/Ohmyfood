@@ -13,13 +13,7 @@ Polices :
     Texte : Roboto
 
 */
-$col-loc:#EAEAEA;
-$col-pdpP:#353535;
-$col-primaire:#9356DC;
-$col-secondaire:#FF79DA;
-$col-tertiaire:#99E2D0;
-$col-txtNew:#008766;
-$col-sect:#F6F6F6;
+@use 'var';
 
 *{
     font-family: 'Roboto', sans-serif;
@@ -33,18 +27,18 @@ h1{
 }
 
 h2{
-    color: #000;
+    color: var.$col-blk;
     font-family: Roboto;
     font-weight: 700;
     margin: 0;
 }
 h3{
     line-height: 0.1em;
-    color: #000;
+    color: var.$col-blk;
 }
 
 p{
-    color:$col-pdpP;
+    color:var.$col-pdpP;
     font-family: Roboto;
     font-weight: 300;
     margin: 0;
@@ -75,7 +69,7 @@ body{
 
 a{
     text-decoration: none;
-    color: white;
+    color: var.$col-wht;
 }
 /*---------------------*/
 /* = Bouton gradiant   */
@@ -87,15 +81,15 @@ a{
     height: 50px;
     margin: 40px 0 40px 0;
     border-radius: 25px;
-    background: var(--Button-Gradient, linear-gradient(1deg, $col-primaire -11.44%, $col-secondaire 123.93%));
+    background: var(--Button-Gradient, linear-gradient(1deg, var.$col-primaire -11.44%, var.$col-secondaire 123.93%));
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var.$col-wht;
 
     &:hover{
         border-radius: 25px;
-        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, $col-primaire -5.2%, $col-secondaire 110.74%);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, var.$col-primaire -5.2%, var.$col-secondaire 110.74%);
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
     } 
 }
@@ -105,7 +99,7 @@ a{
 /*---------------------*/
 .pied-de-page{
     height: 330px;
-    background: $col-pdpP;
+    background: var.$col-pdpP;
     top: auto;
 
     &__titre{
@@ -115,7 +109,7 @@ a{
     }
 
     &__texte{
-        color: var(--White, #FFF);
+        color: var(--White, var.$col-wht);
         font-family: Shrikhand;
         font-size: 18px;
         font-weight: 400;
@@ -123,7 +117,7 @@ a{
     }
 
     &__liste{
-        color: var(--White, #FFF);
+        color: var(--White, var.$col-wht);
         font-family: Roboto;
         font-size: 16px;
         font-weight: 500;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 
 SOMMAIRE
 1 - Balises : h1, h2, h3, p, a, body
@@ -13,6 +14,18 @@ Polices :
     Texte : Roboto
 
 */
+/*
+Couleurs :
+    Primaire :      #9356DC
+    Secondaire :    #FF79DA
+    Tertiaire :     #99E2D0
+    Localisation :  #EAEAEA
+    Section :       #F6F6F6
+    Paragraphe / pied de page :    #353535
+
+    */
+/* variables pour les couleurs */
+/* VAriables pour les médias queries*/
 * {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -69,7 +82,7 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 
 /*---------------------*/
@@ -85,7 +98,7 @@ a {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #fff;
 }
 .btn-gradiant:hover {
   border-radius: 25px;
@@ -107,14 +120,14 @@ a {
   padding: 22px 25px;
 }
 .pied-de-page__texte {
-  color: var(--White, #FFF);
+  color: var(--White, #fff);
   font-family: Shrikhand;
   font-size: 18px;
   font-weight: 400;
   line-height: normal;
 }
 .pied-de-page__liste {
-  color: var(--White, #FFF);
+  color: var(--White, #fff);
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;

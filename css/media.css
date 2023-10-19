@@ -1,10 +1,25 @@
+@charset "UTF-8";
 /********************************************************************/
 /********* Medium devices (tablettes - desktop / minimum : 1024px) **/
 /********************************************************************/
+/*
+Couleurs :
+    Primaire :      #9356DC
+    Secondaire :    #FF79DA
+    Tertiaire :     #99E2D0
+    Localisation :  #EAEAEA
+    Section :       #F6F6F6
+    Paragraphe / pied de page :    #353535
+
+    */
+/* variables pour les couleurs */
+/* VAriables pour les médias queries*/
 @media (min-width: 380px) {
   body {
     max-width: 1440px;
     margin: auto;
+    font-family: sans-serif;
+    font-weight: bold;
   }
   .media-row {
     display: flex;
@@ -24,7 +39,7 @@
   .vignettes {
     display: flex;
     flex-wrap: wrap;
-    width: 1100px;
+    width: 90%;
     margin: auto;
   }
   .vignettes__align {
@@ -35,7 +50,8 @@
     height: 161px;
   }
   .badge {
-    margin-left: 390px;
+    display: flex;
+    justify-content: flex-end;
   }
   /*------------------------------*/
   /* = Restaurants                */

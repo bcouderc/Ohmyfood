@@ -1,0 +1,29 @@
+.loader{
+    position: fixed;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    opacity: 0.9;
+    height: 100vh;
+    inset:0; /* écrite simplifiée pour top left right et bottom = 0*/
+    z-index: 4;
+    animation: disappear 2500ms 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes disappear{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: translatey(2000px);
+    }
+
+}
+
+
+/*animation-fill-mode : 
+    si on veut qu'elle reste à sa place à la fin de l'animation
+    soit elle revient à sa place une fois terminée
+    soit elle part depuis un endroit défini
+*/
