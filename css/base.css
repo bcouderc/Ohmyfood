@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* 
-SOMMAIRE AUTRE.SCSS
+SOMMAIRE BASE.SCSS
 1 - Balises : h1, h2, h3, p, a, body
 2 - Divers : alignement texte / div
 3 - Bouton-gradiant
@@ -8,6 +8,8 @@ SOMMAIRE AUTRE.SCSS
 5 - Positionnement images
 
 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap");
 /* VAR.SCSS */
 /* variables pour les couleurs */
 /* Variables pour les médias queries*/
@@ -16,6 +18,10 @@ SOMMAIRE AUTRE.SCSS
   font-family: "Roboto", sans-serif;
   font-style: normal;
   line-height: normal;
+}
+
+body {
+  margin: 0;
 }
 
 h1 {
@@ -42,6 +48,12 @@ p {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Alignements   */
 .center {
   display: flex;
   align-content: center;
@@ -55,16 +67,6 @@ p {
 .direction-row {
   display: flex;
   flex-direction: row;
-}
-
-.direction {
-  display: flex;
-  flex-direction: column;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
 }
 
 /*---------------------*/

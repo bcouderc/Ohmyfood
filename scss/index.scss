@@ -69,7 +69,7 @@ SOMMAIRE INDEX.SCSS
     position: relative;
     z-index: 1;
     margin: auto;
-    width: 320px;
+    width: 300px;
     height: 72px;
     border-radius: 20px;
     left: -25px;
@@ -123,9 +123,18 @@ SOMMAIRE INDEX.SCSS
 /*---------------------*/
 
 .resto{
+    min-width: 371px;
     display: flex;
     justify-content: space-between;
     background-color:var.$col-sect;
+
+    &__contenaire{
+        max-width: 1170px;
+    }
+
+    &__align{
+        margin: auto;
+    }
 }
 .cards{
     height: 240px;
@@ -175,12 +184,11 @@ SOMMAIRE INDEX.SCSS
     justify-content: center;
     align-content: space-between;
     flex-wrap: wrap;
-    flex-basis: auto;
-    align-self: stretch;
 }
 
 .resto-cards{
-    height: 260px;
+    height: 240px;
+    width: 360px;
     padding-bottom: 18px;
 
     &__cont{
@@ -203,12 +211,6 @@ SOMMAIRE INDEX.SCSS
     }
 }
 
-.cards-img{
-    min-width: 340px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-}
 
 
 

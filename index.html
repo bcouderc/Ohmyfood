@@ -6,9 +6,8 @@
     <!-- Permet de prendre en compte les différents dispositif d'affichage -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ohmyfood</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/autre.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/loaderv2.css">
     <!-- lien de connection pour le kit Font Awesome pour les icones -->
@@ -97,90 +96,90 @@
 <!-- Restaurant ********************************************************************************-->
         <section class="direction resto">
             <div class="vignettes">
-                <div>
-                    <div>
+                <div class="media-row__align">
+                    <div class="resto__contenaire">
                         <h2 class="titre__align" id="restaurants">Restaurants</h2>
-                    </div>
-                    <div class="cards-contenaire vignettes__align">
-                    <!-- La palette du gout------------------------------------------------------->
-                        <div class="resto-cards">
-                            <article class="cards">
-                                <a href="./restaurants/menu-la_palette_du_gout.html">
-                                    <div class="new">                    
-                                        <img src="./images/laPaletteDuGout.jpg" class="cards-img img-lapalette" alt="Restaurant : La palette du goût">
-                                    </div>         
-                                    <div class="direction-row resto-cards__cont">
-                                        <div class="direction resto-cards__text">
-                                            <h3>La palette du goût</h3>
-                                            <p>Ménilmontant</p>
+                        <div class="cards-contenaire vignettes__align">
+                        <!-- La palette du gout------------------------------------------------------->
+                            <div class="resto-cards">
+                                <article class="cards">
+                                    <a href="./restaurants/menu-la_palette_du_gout.html">
+                                        <div class="new">                    
+                                            <img src="./images/laPaletteDuGout.jpg" class="cards-img img-lapalette" alt="Restaurant : La palette du goût">
+                                        </div>         
+                                        <div class="direction-row resto-cards__cont">
+                                            <div class="direction resto-cards__text">
+                                                <h3>La palette du goût</h3>
+                                                <p>Ménilmontant</p>
+                                            </div>
+                                            <div class="resto-cards__heart">
+                                                <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                                                <i class="fa-solid fa-heart"></i>  
+                                            </div>
                                         </div>
-                                        <div class="resto-cards__heart">
-                                            <i class="fa-regular fa-heart" style="color: #000000;"></i>
-                                            <i class="fa-solid fa-heart"></i>  
+                                    </a>
+                                </article>
+                            </div>
+                        <!-- La note enchantée ------------------------------------------------------->
+                            <div class="resto-cards">
+                                <article class="cards">
+                                    <a href="./restaurants/menu-la_note_enchantee.html">
+                                        <div class="new">
+                                            <img src="./images/laNoteEnchantee.jpg" class="cards-img img-lanote" alt="Restaurant : La note enchantée">
                                         </div>
-                                    </div>
-                                </a>
-                            </article>
-                        </div>
-                    <!-- La note enchantée ------------------------------------------------------->
-                        <div class="resto-cards">
-                            <article class="cards">
-                                <a href="./restaurants/menu-la_note_enchantee.html">
-                                    <div class="new">
-                                        <img src="./images/laNoteEnchantee.jpg" class="cards-img img-lanote" alt="Restaurant : La note enchantée">
-                                    </div>
-                                    <div class="direction-row resto-cards__cont">
-                                        <div class="direction resto-cards__text">
-                                            <h3>La note enchantée</h3>
-                                            <p>Charonne</p>
+                                        <div class="direction-row resto-cards__cont">
+                                            <div class="direction resto-cards__text">
+                                                <h3>La note enchantée</h3>
+                                                <p>Charonne</p>
+                                            </div>
+                                            <div class="resto-cards__heart">
+                                                <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                                                <i class="fa-solid fa-heart"></i>      
+                                            </div> 
                                         </div>
-                                        <div class="resto-cards__heart">
-                                            <i class="fa-regular fa-heart" style="color: #000000;"></i>
-                                            <i class="fa-solid fa-heart"></i>      
-                                        </div> 
-                                    </div>
-                                </a>    
-                            </article>
-                        </div>
-                    <!-- A la française ---------------------------------------------------------->
-                        <div class="resto-cards">
-                            <article class="cards">
-                                <a href=".//restaurants/menu-a_la_francaise.html">
-                                    <div>
-                                        <img src="./images/aLaFrancaise.jpg" class="cards-img" alt="Restaurant : A la francaise">
-                                    </div>
-                                    <div class="direction-row resto-cards__cont">
-                                        <div class="direction resto-cards__text">
-                                            <h3>A la francaise</h3>
-                                            <p>Cité rouge</p>
+                                    </a>    
+                                </article>
+                            </div>
+                        <!-- A la française ---------------------------------------------------------->
+                            <div class="resto-cards">
+                                <article class="cards">
+                                    <a href=".//restaurants/menu-a_la_francaise.html">
+                                        <div>
+                                            <img src="./images/aLaFrancaise.jpg" class="cards-img" alt="Restaurant : A la francaise">
                                         </div>
-                                        <div class="resto-cards__heart">
-                                            <i class="fa-regular fa-heart" style="color: #000000;"></i>
-                                            <i class="fa-solid fa-heart"></i>     
+                                        <div class="direction-row resto-cards__cont">
+                                            <div class="direction resto-cards__text">
+                                                <h3>A la francaise</h3>
+                                                <p>Cité rouge</p>
+                                            </div>
+                                            <div class="resto-cards__heart">
+                                                <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                                                <i class="fa-solid fa-heart"></i>     
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </article>
-                        </div>
-                    <!-- Le délice des sens ------------------------------------------------------>
-                        <div class="resto-cards">
-                            <article class="cards">
-                                <a href="./restaurants/menu-le_delice_des_sens.html">
-                                    <div>
-                                        <img src="./images/leDelicesDesSens.jpg" class="cards-img img-ledelice" alt="Restaurant : Le délices des sens">
-                                    </div>    
-                                    <div class="direction-row resto-cards__cont">
-                                        <div class="direction resto-cards__text">
-                                            <h3>Le délice des sens</h3>
-                                            <p>Folie-Méricourt</p>
+                                    </a>
+                                </article>
+                            </div>
+                        <!-- Le délice des sens ------------------------------------------------------>
+                            <div class="resto-cards">
+                                <article class="cards">
+                                    <a href="./restaurants/menu-le_delice_des_sens.html">
+                                        <div>
+                                            <img src="./images/leDelicesDesSens.jpg" class="cards-img img-ledelice" alt="Restaurant : Le délices des sens">
+                                        </div>    
+                                        <div class="direction-row resto-cards__cont">
+                                            <div class="direction resto-cards__text">
+                                                <h3>Le délice des sens</h3>
+                                                <p>Folie-Méricourt</p>
+                                            </div>
+                                            <div class="resto-cards__heart">
+                                                <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                                                <i class="fa-solid fa-heart"></i>    
+                                            </div>
                                         </div>
-                                        <div class="resto-cards__heart">
-                                            <i class="fa-regular fa-heart" style="color: #000000;"></i>
-                                            <i class="fa-solid fa-heart"></i>    
-                                        </div>
-                                    </div>
-                                </a>
-                            </article>
+                                    </a>
+                                </article>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -189,7 +188,7 @@
     </main>
 <!-- Pied de page ------------------------------------------------------------------->
 <footer>
-    <div class="pied-de-page pied-de-page_2">
+    <div class="pied-de-page">
         <div class="direction pied-de-page__titre">
             <div class="pied-de-page__m-titre">
                 <div >

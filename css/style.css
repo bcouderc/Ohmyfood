@@ -1,12 +1,10 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap");
 /* VAR.SCSS */
 /* variables pour les couleurs */
 /* Variables pour les médias queries*/
 /* Mixins */
 /* 
-SOMMAIRE AUTRE.SCSS
+SOMMAIRE BASE.SCSS
 1 - Balises : h1, h2, h3, p, a, body
 2 - Divers : alignement texte / div
 3 - Bouton-gradiant
@@ -18,6 +16,10 @@ SOMMAIRE AUTRE.SCSS
   font-family: "Roboto", sans-serif;
   font-style: normal;
   line-height: normal;
+}
+
+body {
+  margin: 0;
 }
 
 h1 {
@@ -44,6 +46,12 @@ p {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Alignements   */
 .center {
   display: flex;
   align-content: center;
@@ -62,11 +70,6 @@ p {
 .direction {
   display: flex;
   flex-direction: column;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
 }
 
 /*---------------------*/
@@ -228,7 +231,7 @@ SOMMAIRE INDEX.SCSS
   position: relative;
   z-index: 1;
   margin: auto;
-  width: 320px;
+  width: 300px;
   height: 72px;
   border-radius: 20px;
   left: -25px;
@@ -324,12 +327,11 @@ SOMMAIRE INDEX.SCSS
   justify-content: center;
   align-content: space-between;
   flex-wrap: wrap;
-  flex-basis: auto;
-  align-self: stretch;
 }
 
 .resto-cards {
   height: 260px;
+  width: 371px;
   padding-bottom: 18px;
 }
 .resto-cards__cont {
@@ -350,7 +352,7 @@ SOMMAIRE INDEX.SCSS
 }
 
 .cards-img {
-  min-width: 340px;
+  width: 371px;
   height: 160px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -553,82 +555,20 @@ SOMMAIRE RESTAURANTS.SCSS
 /********************************************************************/
 /********* Medium devices (tablettes - desktop / minimum : 1024px) **/
 /********************************************************************/
-@media (min-width: 1440px) {
-  /*------------------------------*/
-  /* = Restaurants                */
-  /*------------------------------*/
-  .contenaire {
-    max-width: 1055px;
-    height: auto;
-    margin: auto;
-    position: relative;
-    z-index: 2;
-    top: 70px;
-  }
-  .contenaire__menu {
-    display: flex;
-  }
-  .align_txt {
-    justify-content: center;
-  }
-  .menu {
-    width: 634px;
-  }
-  .menu__m-align {
-    margin: auto;
-  }
-  .img {
-    width: 1440px;
-    height: 320px;
-  }
-  .img__contenaire {
-    margin: auto;
-  }
-}
-@media (min-width: 810px) {
-  /*------------------------------*/
-  /* = Restaurants                */
-  /*------------------------------*/
-  .contenaire {
-    max-width: 810px;
-    height: auto;
-    margin: auto;
-    position: relative;
-    z-index: 2;
-    top: 70px;
-  }
-  .contenaire__menu {
-    display: flex;
-  }
-  .align_txt {
-    justify-content: center;
-  }
-  .menu {
-    width: 634px;
-  }
-  .menu__m-align {
-    margin: auto;
-  }
-  .img {
-    width: 810px;
-    height: 320px;
-  }
-  .img__contenaire {
-    margin: auto;
-  }
-}
 @media (min-width: 371px) {
   .media-row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   .media-row__align {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: auto;
   }
-  direction2 {
+  direction {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   /*------------------------------*/
   /* = Index                      */
@@ -640,7 +580,7 @@ SOMMAIRE RESTAURANTS.SCSS
     margin: auto;
   }
   .vignettes__align {
-    gap: 60px;
+    gap: 30px;
   }
   .cards-img {
     min-width: 371px;
@@ -719,5 +659,69 @@ SOMMAIRE RESTAURANTS.SCSS
   .img-lapalette__2 {
     -o-object-position: 0 -400px;
        object-position: 0 -400px;
+  }
+}
+@media (min-width: 1440px) {
+  /*------------------------------*/
+  /* = Restaurants                */
+  /*------------------------------*/
+  .contenaire {
+    max-width: 1055px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    top: 70px;
+  }
+  .contenaire__menu {
+    display: flex;
+  }
+  .align_txt {
+    justify-content: center;
+  }
+  .menu {
+    width: 634px;
+  }
+  .menu__m-align {
+    margin: auto;
+  }
+  .img {
+    width: 1440px;
+    height: 320px;
+  }
+  .img__contenaire {
+    margin: auto;
+  }
+}
+@media (min-width: 810px) {
+  /*------------------------------*/
+  /* = Restaurants                */
+  /*------------------------------*/
+  .contenaire {
+    max-width: 810px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    top: 70px;
+  }
+  .contenaire__menu {
+    display: flex;
+  }
+  .align_txt {
+    justify-content: center;
+  }
+  .menu {
+    width: 634px;
+  }
+  .menu__m-align {
+    margin: auto;
+  }
+  .img {
+    width: 810px;
+    height: 320px;
+  }
+  .img__contenaire {
+    margin: auto;
   }
 }

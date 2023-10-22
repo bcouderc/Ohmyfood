@@ -1,5 +1,5 @@
 /* 
-SOMMAIRE AUTRE.SCSS
+SOMMAIRE BASE.SCSS
 1 - Balises : h1, h2, h3, p, a, body
 2 - Divers : alignement texte / div
 3 - Bouton-gradiant
@@ -9,10 +9,17 @@ SOMMAIRE AUTRE.SCSS
 */
 @use 'var';
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap');
+
+
 *{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     line-height: normal;
+}
+body {
+    margin: 0;
 }
 
 h1{
@@ -38,6 +45,11 @@ p{
     margin: 0;
 }
 
+a{
+    text-decoration: none;
+    color: var.$col-wht;
+}
+/* Alignements   */
 .center{
     display: flex;
     align-content: center;
@@ -52,15 +64,6 @@ p{
     flex-direction: row;
 }
 
-.direction{
-    display: flex;
-    flex-direction: column;
-}
-
-a{
-    text-decoration: none;
-    color: var.$col-wht;
-}
 /*---------------------*/
 /* = Bouton gradiant   */
 /*---------------------*/
