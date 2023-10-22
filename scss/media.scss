@@ -3,15 +3,92 @@
 /********************************************************************/
 
 @use 'var';
+    
+    @media (min-width: 1440px){
 
-@media (min-width: 380px){
+    /*------------------------------*/
+    /* = Restaurants                */
+    /*------------------------------*/
 
-    body{
-        max-width: 1440px;
+    .contenaire{
+        max-width: 1055px;
+        height: auto;
         margin: auto;
-        font-family: sans-serif;
-        font-weight: bold;
+        position: relative;
+        z-index: 2;
+        top: 70px;
+
+        &__menu{
+            display: flex;        
+        }
     }
+
+    .align_txt{
+        justify-content: center;
+    }
+
+    .menu{
+        width: 634px;
+
+        &__m-align{
+            margin: auto;
+        }
+    }
+
+    .img{
+        width: 1440px;
+        height: 320px;
+
+        &__contenaire{
+            margin: auto;
+        }
+    }
+}
+
+
+@media (min-width: 810px){
+/*------------------------------*/
+    /* = Restaurants                */
+    /*------------------------------*/
+
+    .contenaire{
+        max-width: 810px;
+        height: auto;
+        margin: auto;
+        position: relative;
+        z-index: 2;
+        top: 70px;
+
+        &__menu{
+            display: flex;        
+        }
+    }
+
+    .align_txt{
+        justify-content: center;
+    }
+
+    .menu{
+        width: 634px;
+
+        &__m-align{
+            margin: auto;
+        }
+    }
+
+    .img{
+        width: 810px;
+        height: 320px;
+
+        &__contenaire{
+            margin: auto;
+        }
+    }
+}
+
+
+
+@media (min-width: 371px){
 
     .media-row {
         display: flex;
@@ -34,16 +111,16 @@
     .vignettes{
         display: flex;
         flex-wrap: wrap;
-        width: 90%;
+        width: 100%;
         margin: auto;
 
         &__align{
-            gap:80px
+            gap:60px
         }
     }
 
     .cards-img{
-        width: 490px;
+        min-width: 371px;
         height: 161px;
     }
 
@@ -103,6 +180,7 @@
         justify-content: flex-end;
         height: 114px;
         top:70px;
+        background:var.$col-pdpP;
 
         &__m-align{
             display: flex;

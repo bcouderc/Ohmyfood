@@ -1,5 +1,5 @@
 /*
-SOMMAIRE
+SOMMAIRE RESTAURANTS.SCSS
 1 - Header
 2 - Image
 3 - Titre de la page
@@ -106,7 +106,8 @@ SOMMAIRE
     border-radius: 15.043px;
     background:var.$col-wht;
     box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
-    
+    @include var.menu-txt;
+
     &__titre{
     color: var.$col-blk;
     font-size: 16px;
@@ -116,7 +117,6 @@ SOMMAIRE
     }
 
     &__ss-titre{
-        @include var.menu-txt;
         color: var.$col-blk;
         font-size: 18px;
         font-weight: 500;
@@ -124,7 +124,6 @@ SOMMAIRE
     }
 
     &__txt{
-        @include var.menu-txt;
         color: var.$col-blk;
         font-size: 15.043px;
         margin: 0 0 15px 15px;
@@ -147,20 +146,22 @@ SOMMAIRE
 
     &__cloche{
         background-color:var.$col-tertiaire;
-        width: 0;
+        width: 4rem;
         height: 69px;
+        margin-right: -4rem;
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 0 15px 15px 0;
-        opacity: 0;
+        opacity: 1;
         position: relative;
-        transition: width, .5s;
+        transition: margin-right , .5s;
+    }
+    
+    &:hover .menu__cloche{
+        cursor: pointer;
+        margin-right: 0;
 
-        &:hover{
-            width: 59px;
-            opacity: 1;
-        }
     }
     
     

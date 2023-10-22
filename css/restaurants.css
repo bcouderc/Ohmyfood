@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-SOMMAIRE
+SOMMAIRE RESTAURANTS.SCSS
 1 - Header
 2 - Image
 3 - Titre de la page
@@ -8,16 +8,7 @@ SOMMAIRE
 5 - Vignettes des menus
 
 */
-/*
-Couleurs :
-    Primaire :      #9356DC
-    Secondaire :    #FF79DA
-    Tertiaire :     #99E2D0
-    Localisation :  #EAEAEA
-    Section :       #F6F6F6
-    Paragraphe / pied de page :    #353535
-
-    */
+/* VAR.SCSS */
 /* variables pour les couleurs */
 /* Variables pour les médias queries*/
 /* Mixins */
@@ -111,6 +102,9 @@ Couleurs :
   border-radius: 15.043px;
   background: #fff;
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu__titre {
   color: #000;
@@ -120,18 +114,12 @@ Couleurs :
   margin: 40px 0 5px 0;
 }
 .menu__ss-titre {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
   color: #000;
   font-size: 18px;
   font-weight: 500;
   margin: 15px 0 0 15px;
 }
 .menu__txt {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
   color: #000;
   font-size: 15.043px;
   margin: 0 0 15px 15px;
@@ -151,19 +139,20 @@ Couleurs :
 }
 .menu__cloche {
   background-color: #99E2D0;
-  width: 0;
+  width: 4rem;
   height: 69px;
+  margin-right: -4rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 0 15px 15px 0;
-  opacity: 0;
-  position: relative;
-  transition: width, 0.5s;
-}
-.menu__cloche:hover {
-  width: 59px;
   opacity: 1;
+  position: relative;
+  transition: margin-right, 0.5s;
+}
+.menu:hover .menu__cloche {
+  cursor: pointer;
+  margin-right: 0;
 }
 
 /*-----------------------*/

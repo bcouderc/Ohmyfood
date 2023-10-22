@@ -1,16 +1,10 @@
 /* 
-SOMMAIRE
+SOMMAIRE AUTRE.SCSS
 1 - Balises : h1, h2, h3, p, a, body
 2 - Divers : alignement texte / div
 3 - Bouton-gradiant
 4 - Pied-de-page
 5 - Positionnement images
-
-
-INFORMATIONS DE BASE
-Polices :
-    Logo et titres : Shrikhand
-    Texte : Roboto
 
 */
 @use 'var';
@@ -42,10 +36,6 @@ p{
     font-family: Roboto;
     font-weight: 300;
     margin: 0;
-}
-
-body{
-    max-width: 375px ;
 }
 
 .center{

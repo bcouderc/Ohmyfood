@@ -2,25 +2,75 @@
 /********************************************************************/
 /********* Medium devices (tablettes - desktop / minimum : 1024px) **/
 /********************************************************************/
-/*
-Couleurs :
-    Primaire :      #9356DC
-    Secondaire :    #FF79DA
-    Tertiaire :     #99E2D0
-    Localisation :  #EAEAEA
-    Section :       #F6F6F6
-    Paragraphe / pied de page :    #353535
-
-    */
+/* VAR.SCSS */
 /* variables pour les couleurs */
-/* VAriables pour les médias queries*/
-@media (min-width: 380px) {
-  body {
-    max-width: 1440px;
+/* Variables pour les médias queries*/
+/* Mixins */
+@media (min-width: 1440px) {
+  /*------------------------------*/
+  /* = Restaurants                */
+  /*------------------------------*/
+  .contenaire {
+    max-width: 1055px;
+    height: auto;
     margin: auto;
-    font-family: sans-serif;
-    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    top: 70px;
   }
+  .contenaire__menu {
+    display: flex;
+  }
+  .align_txt {
+    justify-content: center;
+  }
+  .menu {
+    width: 634px;
+  }
+  .menu__m-align {
+    margin: auto;
+  }
+  .img {
+    width: 1440px;
+    height: 320px;
+  }
+  .img__contenaire {
+    margin: auto;
+  }
+}
+@media (min-width: 810px) {
+  /*------------------------------*/
+  /* = Restaurants                */
+  /*------------------------------*/
+  .contenaire {
+    max-width: 810px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    top: 70px;
+  }
+  .contenaire__menu {
+    display: flex;
+  }
+  .align_txt {
+    justify-content: center;
+  }
+  .menu {
+    width: 634px;
+  }
+  .menu__m-align {
+    margin: auto;
+  }
+  .img {
+    width: 810px;
+    height: 320px;
+  }
+  .img__contenaire {
+    margin: auto;
+  }
+}
+@media (min-width: 371px) {
   .media-row {
     display: flex;
     flex-direction: row;
@@ -39,14 +89,14 @@ Couleurs :
   .vignettes {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
   .vignettes__align {
-    gap: 80px;
+    gap: 60px;
   }
   .cards-img {
-    width: 490px;
+    min-width: 371px;
     height: 161px;
   }
   .badge {
@@ -94,6 +144,7 @@ Couleurs :
     justify-content: flex-end;
     height: 114px;
     top: 70px;
+    background: #353535;
   }
   .pied-de-page__m-align {
     display: flex;
