@@ -51,7 +51,7 @@ SOMMAIRE RESTAURANTS.SCSS
 /*-----------------------*/
 .img {
   width: 100%;
-  height: 320px;
+  height: 260px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -91,8 +91,6 @@ SOMMAIRE RESTAURANTS.SCSS
 /* = Menu                */
 /*-----------------------*/
 .contenaire {
-  z-index: 1;
-  position: relative;
   width: 375px;
   background-color: #f6f6f6;
   border-radius: 50px 50px 0 0;
