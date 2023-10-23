@@ -12,6 +12,14 @@ SOMMAIRE RESTAURANTS.SCSS
 /* variables pour les couleurs */
 /* Variables pour les médias queries*/
 /* Mixins */
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /*-----------------------*/
 /* = Header              */
 /*-----------------------*/
@@ -31,20 +39,6 @@ SOMMAIRE RESTAURANTS.SCSS
 }
 
 /*-----------------------*/
-/* = Image               */
-/*-----------------------*/
-.img {
-  z-index: 2;
-  width: 375px;
-  height: 275px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.img__contenaire {
-  height: 200px;
-}
-
-/*-----------------------*/
 /* = Titre               */
 /*-----------------------*/
 .titre {
@@ -52,16 +46,45 @@ SOMMAIRE RESTAURANTS.SCSS
   margin-top: 0;
 }
 
+/*-----------------------*/
+/* = Image               */
+/*-----------------------*/
+.img {
+  width: 100%;
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.img__contenaire {
+  height: 200px;
+}
+
 .align_txt {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 32px 0 0 17px;
+  position: relative;
+  top: 30px;
+  left: 17px;
 }
 
 .align-heart {
+  position: relative;
   display: flex;
-  margin: 10px 20px;
+  margin: 10px 35px;
+  /* Animation coeur */
+}
+.align-heart .fa-solid {
+  opacity: 0;
+  position: absolute;
+  color: transparent;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+          background-clip: text;
+  transition: all 500ms;
+}
+.align-heart:hover .fa-solid {
+  opacity: 1;
 }
 
 /*-----------------------*/
@@ -69,8 +92,8 @@ SOMMAIRE RESTAURANTS.SCSS
 /*-----------------------*/
 .contenaire {
   z-index: 1;
+  position: relative;
   width: 375px;
-  flex-shrink: 0;
   background-color: #f6f6f6;
   border-radius: 50px 50px 0 0;
 }
@@ -105,6 +128,16 @@ SOMMAIRE RESTAURANTS.SCSS
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  animation: appear 1s;
+}
+.menu:nth-child(1) {
+  animation-delay: 100ms;
+}
+.menu:nth-child(2) {
+  animation-delay: 200ms;
+}
+.menu:nth-child(3) {
+  animation-delay: 300ms;
 }
 .menu__titre {
   color: #000;
@@ -112,17 +145,26 @@ SOMMAIRE RESTAURANTS.SCSS
   font-weight: 300;
   text-transform: uppercase; /*Mets en Majuscule le texte*/
   margin: 40px 0 5px 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu__ss-titre {
   color: #000;
   font-size: 18px;
   font-weight: 500;
   margin: 15px 0 0 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu__txt {
   color: #000;
   font-size: 15.043px;
   margin: 0 0 15px 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu__euro {
   display: flex;
@@ -153,18 +195,4 @@ SOMMAIRE RESTAURANTS.SCSS
 .menu:hover .menu__cloche {
   cursor: pointer;
   margin-right: 0;
-}
-
-/*-----------------------*/
-/* = cloche              */
-/*-----------------------*/
-.cloche {
-  display: flex;
-  width: 59px;
-  height: 69px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0 15px 15px 0;
-  background-color: #99E2D0;
-  visibility: hidden;
 }
