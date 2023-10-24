@@ -21,8 +21,3 @@
     transform: translatey(2000px);
   }
 }
-/*animation-fill-mode : 
-    si on veut qu'elle reste à sa place à la fin de l'animation
-    soit elle revient à sa place une fois terminée
-    soit elle part depuis un endroit défini
-*/

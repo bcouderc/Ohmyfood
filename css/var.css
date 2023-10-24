@@ -2,7 +2,7 @@
 /* VAR.SCSS */
 /* variables pour les couleurs */
 /* Variables pour les médias queries*/
-/* Mixins */
+/* Mixins - Keyframes */
 @keyframes appear {
   0% {
     transform: scale(0);

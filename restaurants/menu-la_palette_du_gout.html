@@ -6,17 +6,14 @@
     <!-- Permet de prendre en compte les différents dispositif d'affichage -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - La palette du goût</title>
-    <link rel="stylesheet" href="../css/restaurants.css">
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/media.css">
-    <link rel="stylesheet" href="../css/var.css">
-    <!-- lien de connection pour le kit Font Awesome pour les icones -->
+    <link rel="stylesheet" href="../css/style.css">
+        <!-- lien de connection pour le kit Font Awesome pour les icones -->
     <script src="https://kit.fontawesome.com/7be78ce38e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="direction-row">
-        <!-- Retour page index.html -------------------------------------------------------->
+        <!-- Retour page index.html *****************************************************-->
             <div class="header__go-back">
                 <a href="../index.html"><i class="fa-solid fa-arrow-left" style="color: #000000;"></i></a>
             </div>
@@ -40,16 +37,16 @@
                         <i class="fa-solid fa-heart"></i> 
                     </div>
                 </div>
-        <!-- Entrées ----------------------------------------------------------------------->
+        <!-- Entrées ********************************************************************-->
                 <Section class="contenaire__menu">
                     <div class="menu__m-align">
                         <div>
                             <h2 class="menu__titre">Entrées</h2>
                         </div>
                         <div class="line"></div>
-                        <div class="plat"> <!-- Mettre ici l'animation pour faire apparaitre les items-->
+                        <div class="plat">
                             <div class="menu">
-                                <div>
+                                <div class="menu__truncate-text">
                                     <p class="menu__ss-titre">Fricassée d'escargots</p>
                                     <p class="menu__txt">Au piment d'Espelette </p>
                                 </div>
@@ -59,7 +56,7 @@
                                 </div>
                             </div>
                             <div class="menu">
-                                <div>
+                                <div class="menu__truncate-text">
                                     <p class="menu__ss-titre">Foie gras de canard mi-cuit</p>
                                     <p class="menu__txt">Et ses copeaux de truffe noire</p>
                                 </div>
@@ -71,7 +68,7 @@
                             </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 
                             <div class="menu">
-                                <div>
+                                <div class="menu__truncate-text">
                                     <p class="menu__ss-titre">Œuf au plat</p>
                                     <p class="menu__txt">Assaisonné à la truffe sur lit de caviar</p>
                                 </div>
@@ -83,7 +80,7 @@
                         </div>
                     </div>
                 </section>
-        <!-- Plats ------------------------------------------------------------------------->
+        <!-- Plats **********************************************************************-->
                 <Section class="contenaire__menu">
                     <div class="menu__m-align">
                         <div>
@@ -92,7 +89,7 @@
                         <div class="line"></div>
                         <div class="plat">
                             <div class="menu">
-                                <div>
+                                <div class="menu__truncate-text">
                                     <p class="menu__ss-titre">Filet de bœuf aux herbes</p>
                                     <p class="menu__txt">Accompagné de sa ribambelle de légumes</p>
                                 </div>
@@ -102,7 +99,7 @@
                                 </div>
                             </div>
                             <div class="menu">
-                                <div>
+                                <div class="menu__truncate-text">
                                     <p class="menu__ss-titre">Parmentier de queue de bœuf</p>
                                     <p class="menu__txt">À la truffe noire sur sa purée de panais</p>
                                 </div>
@@ -112,7 +109,7 @@
                                 </div>
                             </div>
                             <div class="menu">
-                                <div>
+                                <div class="menu__truncate-text">
                                     <p class="menu__ss-titre">Filet de turbot</p>
                                     <p class="menu__txt">Aux agrumes</p>
                                 </div>
@@ -124,7 +121,7 @@
                         </div>
                     </div>
                 </section>
-        <!-- Desserts ----------------------------------------------------------------------> 
+        <!-- Desserts *******************************************************************--> 
                 <Section class="contenaire__menu">
                     <div class="menu__m-align">
                         <div>
@@ -133,7 +130,7 @@
                         <div class="line"></div>
                         <div class="plat">
                             <div class="menu">
-                                <div>
+                                <div class="menu__truncate-text">
                                     <p class="menu__ss-titre">Paris-Brest</p>
                                     <p class="menu__txt">Revisité</p>
                                 </div>
@@ -143,7 +140,7 @@
                                 </div>
                             </div>
                             <div class="menu">
-                                <div>
+                                <div class="menu__truncate-text">
                                     <p class="menu__ss-titre">Macaron au chocolat d'exception  </p>
                                     <p class="menu__txt">Et glace à la vanille de Madagascar</p>
                                 </div>
@@ -153,7 +150,7 @@
                                 </div>
                             </div>
                             <div class="menu">
-                                <div>
+                                <div class="menu__truncate-text">
                                     <p class="menu__ss-titre">Mousse au chocolat </p>
                                     <p class="menu__txt">Au piment d'Espelette et à la truffe noire</p>
                                 </div>
@@ -165,18 +162,16 @@
                         </div>
                     </div>
                 </section>
-<!-- Bouton Commander ---------------------------------------------------------------->
-                <section>
-                    <div class="center">
-                        <div class="btn-gradiant">
-                            <p><a href="#restaurants">Commander</a></p>
-                        </div>
+<!-- Bouton Commander *******************************************************************-->
+                <div class="center">
+                    <div class="btn-gradiant">
+                        <p><a href="#restaurants">Commander</a></p>
                     </div>
-                </section>
+                </div>
             </div>
         </div>
     </main>
-<!-- Pied de page ------------------------------------------------------------------->
+<!-- Pied de page ***********************************************************************-->
     <footer>
         <div class="pied-de-page">
             <div class="direction pied-de-page__titre">

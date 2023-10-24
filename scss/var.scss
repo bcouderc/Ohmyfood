@@ -13,17 +13,18 @@
 
     /* Variables pour les médias queries*/
 
-    $-smartphone:375px;
-    $-tablet:768px;
-    $-maxWidth:1440px;
+    $smartphone:360px;
+    $tablet:810px;
+    $desktop:1100px;
 
-    /* Mixins */
+    /* Mixins - Keyframes */
 
     @mixin menu-txt{
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
+        white-space: nowrap;     /* Empêche le texte de passer à la ligne */
+        overflow: hidden;        /* Cache le texte qui dépasse la largeur de l'élément */
+        text-overflow: ellipsis; /* Ajoute une ellipse (...) à la fin du texte coupé */
     }
+
 
     @keyframes appear {
         0%{

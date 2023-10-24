@@ -13,7 +13,15 @@ SOMMAIRE BASE.SCSS
 /* VAR.SCSS */
 /* variables pour les couleurs */
 /* Variables pour les médias queries*/
-/* Mixins */
+/* Mixins - Keyframes */
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -94,8 +102,9 @@ a {
 /* = Pied de page      */
 /*---------------------*/
 .pied-de-page {
-  height: 330px;
+  height: 250px;
   background: #353535;
+  position: relative;
   top: auto;
 }
 .pied-de-page__titre {
@@ -134,10 +143,6 @@ a {
   -o-object-position: 0 -50px;
      object-position: 0 -50px;
 }
-.img-lapalette__2 {
-  -o-object-position: 0 -20px;
-     object-position: 0 -20px;
-}
 
 .img-lanote {
   -o-object-position: 0 -160px;
@@ -148,18 +153,10 @@ a {
   -o-object-position: 0 -80px;
      object-position: 0 -80px;
 }
-.img-ledelice__2 {
-  -o-object-position: 0 -25px;
-     object-position: 0 -25px;
-}
 
 .img-alafrancaise {
   -o-object-position: 0 -80px;
      object-position: 0 -80px;
-}
-.img-alafrancaise__2 {
-  -o-object-position: 0 -20px;
-     object-position: 0 -20px;
 }
 
 /*
@@ -234,7 +231,7 @@ SOMMAIRE INDEX.SCSS
   left: -25px;
   background: var(--Background, #f6f6f6);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  transition: box-shadow 0.3 ease-out;
+  transition: box-shadow 0.5s ease-out;
 }
 .btn-fonct__align {
   display: flex;
@@ -242,8 +239,15 @@ SOMMAIRE INDEX.SCSS
   gap: 20px;
 }
 .btn-fonct:hover {
+  color: #9356DC;
   background: #fff;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.27);
+}
+.btn-fonct .fa-solid {
+  color: #7E7E7E;
+}
+.btn-fonct .fa-solid:hover {
+  color: #9356DC;
 }
 
 .btn-num {
@@ -378,11 +382,6 @@ SOMMAIRE INDEX.SCSS
     transform: translatey(2000px);
   }
 }
-/*animation-fill-mode : 
-    si on veut qu'elle reste à sa place à la fin de l'animation
-    soit elle revient à sa place une fois terminée
-    soit elle part depuis un endroit défini
-*/
 /*
 SOMMAIRE RESTAURANTS.SCSS
 1 - Header
@@ -411,19 +410,6 @@ SOMMAIRE RESTAURANTS.SCSS
 }
 
 /*-----------------------*/
-/* = Image               */
-/*-----------------------*/
-.img {
-  z-index: 2;
-  height: 275px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.img__contenaire {
-  height: 200px;
-}
-
-/*-----------------------*/
 /* = Titre               */
 /*-----------------------*/
 .titre {
@@ -431,25 +417,52 @@ SOMMAIRE RESTAURANTS.SCSS
   margin-top: 0;
 }
 
+/*-----------------------*/
+/* = Image               */
+/*-----------------------*/
+.img {
+  width: 100%;
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.img__contenaire {
+  height: 200px;
+}
+
 .align_txt {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 32px 0 0 17px;
+  position: relative;
+  top: 30px;
+  left: 17px;
 }
 
 .align-heart {
+  position: relative;
   display: flex;
-  margin: 10px 20px;
+  margin: 10px 35px;
+  /* Animation coeur */
+}
+.align-heart .fa-solid {
+  opacity: 0;
+  position: absolute;
+  color: transparent;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+          background-clip: text;
+  transition: all 500ms;
+}
+.align-heart:hover .fa-solid {
+  opacity: 1;
 }
 
 /*-----------------------*/
 /* = Menu                */
 /*-----------------------*/
 .contenaire {
-  z-index: 1;
   width: 375px;
-  flex-shrink: 0;
   background-color: #f6f6f6;
   border-radius: 50px 50px 0 0;
 }
@@ -481,9 +494,19 @@ SOMMAIRE RESTAURANTS.SCSS
   border-radius: 15.043px;
   background: #fff;
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  animation: appear 1s;
+}
+.menu:nth-child(1) {
+  animation-delay: 100ms;
+}
+.menu:nth-child(2) {
+  animation-delay: 200ms;
+}
+.menu:nth-child(3) {
+  animation-delay: 300ms;
+}
+.menu:nth-child(4) {
+  animation-delay: 400ms;
 }
 .menu__titre {
   color: #000;
@@ -497,11 +520,17 @@ SOMMAIRE RESTAURANTS.SCSS
   font-size: 18px;
   font-weight: 500;
   margin: 15px 0 0 15px;
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  overflow: hidden; /* Cache le texte qui dépasse la largeur de l'élément */
+  text-overflow: ellipsis; /* Ajoute une ellipse (...) à la fin du texte coupé */
 }
 .menu__txt {
   color: #000;
   font-size: 15.043px;
   margin: 0 0 15px 15px;
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  overflow: hidden; /* Cache le texte qui dépasse la largeur de l'élément */
+  text-overflow: ellipsis; /* Ajoute une ellipse (...) à la fin du texte coupé */
 }
 .menu__euro {
   display: flex;
@@ -515,6 +544,12 @@ SOMMAIRE RESTAURANTS.SCSS
   display: flex;
   align-items: flex-end;
   gap: 15px;
+  padding-left: 100px;
+}
+.menu__truncate-text {
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  overflow: hidden; /* Cache le texte qui dépasse la largeur de l'élément */
+  text-overflow: ellipsis; /* Ajoute une ellipse (...) à la fin du texte coupé */
 }
 .menu__cloche {
   background-color: #99E2D0;
@@ -530,18 +565,17 @@ SOMMAIRE RESTAURANTS.SCSS
   transition: margin-right, 0.5s;
 }
 .menu:hover .menu__cloche {
-  cursor: pointer;
-  margin-right: 0;
-}
-.menu:active .menu__cloche {
-  cursor: pointer;
   margin-right: 0;
 }
 
-/********************************************************************/
-/********* Medium devices (tablettes - desktop / minimum : 1024px) **/
-/********************************************************************/
-@media (min-width: 371px) {
+/************************************************************************/
+/* Medium devices
+/* - 1_smartphone min: 360px
+/* - 2_tablettes min: 810px
+/* - 3_desktop min: 1100px)
+/************************************************************************/
+/************************************************************************/
+@media (min-width: 360px) {
   .direction {
     display: flex;
     flex-direction: column;
@@ -560,9 +594,6 @@ SOMMAIRE RESTAURANTS.SCSS
     display: flex;
     flex-direction: column;
   }
-  /*------------------------------*/
-  /* = Index                      */
-  /*------------------------------*/
   .vignettes {
     display: flex;
     flex-wrap: wrap;
@@ -583,15 +614,11 @@ SOMMAIRE RESTAURANTS.SCSS
     display: flex;
     justify-content: flex-end;
   }
-  /*------------------------------*/
-  /* = Restaurants                */
-  /*------------------------------*/
   .contenaire {
     width: 100%;
+    height: auto;
     margin: auto;
-    position: relative;
     z-index: 2;
-    top: 50px;
   }
   .contenaire__menu {
     display: flex;
@@ -600,41 +627,68 @@ SOMMAIRE RESTAURANTS.SCSS
     justify-content: center;
   }
   .menu {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
     width: 330px;
   }
   .menu__m-align {
     margin: auto;
   }
-  .img {
-    height: 320px;
-  }
-  .img__contenaire {
-    margin: auto;
-  }
-  /*------------------------------*/
-  /* = Pied de page               */
-  /*------------------------------*/
   .pied-de-page {
-    position: relative;
+    position: absolute;
     z-index: 3;
+    width: 100%;
+    height: 214px;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
-    height: 214px;
     background: #353535;
   }
-  /*------------------------------*/
-  /* = Positionnement des images  */
-  /*------------------------------*/
-  .img-lapalette__2 {
-    -o-object-position: 0 -400px;
-       object-position: 0 -400px;
+}
+/************************************************************************/
+@media (min-width: 810px) {
+  .contenaire {
+    max-width: 810px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+  }
+  .contenaire__menu {
+    display: flex;
+  }
+  .titre__align {
+    padding-left: 10px;
+  }
+  .align_txt {
+    justify-content: center;
+  }
+  .menu {
+    width: 634px;
+  }
+  .menu__m-align {
+    margin: auto;
+  }
+  .pied-de-page {
+    display: flex;
+    justify-content: flex-end;
+    height: 100px;
+    top: auto;
+  }
+  .pied-de-page__m-align {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .pied-de-page__m-titre {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 70px;
   }
 }
+/************************************************************************/
 @media (min-width: 1100px) {
-  /*------------------------------*/
-  /* = Restaurants                */
-  /*------------------------------*/
   .resto-cards {
     height: 240px;
     width: 500px;
@@ -646,7 +700,6 @@ SOMMAIRE RESTAURANTS.SCSS
     margin: auto;
     position: relative;
     z-index: 2;
-    top: 70px;
   }
   .contenaire__menu {
     display: flex;
@@ -658,13 +711,6 @@ SOMMAIRE RESTAURANTS.SCSS
     width: 634px;
   }
   .menu__m-align {
-    margin: auto;
-  }
-  .img {
-    width: 1440px;
-    height: 320px;
-  }
-  .img__contenaire {
     margin: auto;
   }
   .media-row {
@@ -677,55 +723,7 @@ SOMMAIRE RESTAURANTS.SCSS
     justify-content: center;
     margin: auto;
   }
-}
-@media (min-width: 810px) {
-  /*------------------------------*/
-  /* = Restaurants                */
-  /*------------------------------*/
-  .contenaire {
-    max-width: 810px;
-    height: auto;
-    margin: auto;
-    position: relative;
-    z-index: 2;
-    top: 70px;
-  }
-  .contenaire__menu {
-    display: flex;
-  }
-  .align_txt {
-    justify-content: center;
-  }
-  .menu {
-    width: 634px;
-  }
-  .menu__m-align {
-    margin: auto;
-  }
-  .img {
-    height: 320px;
-  }
-  .img__contenaire {
-    margin: auto;
-  }
-  .pied-de-page {
-    position: relative;
-    z-index: 3;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    height: 114px;
-    background: #353535;
-  }
-  .pied-de-page__m-align {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-  }
-  .pied-de-page__m-titre {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: 30px;
-    gap: 70px;
+  .titre__align {
+    padding-left: 40px;
   }
 }

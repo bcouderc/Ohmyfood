@@ -1,10 +1,14 @@
-/********************************************************************/
-/********* Medium devices (tablettes - desktop / minimum : 1024px) **/
-/********************************************************************/
+/************************************************************************/
+/* Medium devices
+/* - 1_smartphone min: 360px
+/* - 2_tablettes min: 810px
+/* - 3_desktop min: 1100px)
+/************************************************************************/
 
 @use 'var';
 
-@media (min-width: 360px){
+/************************************************************************/
+@media (min-width:var.$smartphone){
     .direction{
         display: flex;
         flex-direction: column;
@@ -26,9 +30,6 @@
         display: flex;
         flex-direction: column;
     }
-    /*------------------------------*/
-    /* = Index                      */
-    /*------------------------------*/
 
     .vignettes{
         display: flex;
@@ -52,10 +53,6 @@
         display: flex;
         justify-content: flex-end;
     }
-
-    /*------------------------------*/
-    /* = Restaurants                */
-    /*------------------------------*/
 
     .contenaire{
         width: 100%;
@@ -83,10 +80,6 @@
         }
     }
 
-    /*------------------------------*/
-    /* = Pied de page               */
-    /*------------------------------*/
-
     .pied-de-page{
         position:absolute;
         z-index: 3;
@@ -98,15 +91,10 @@
         
         background:var.$col-pdpP;
     }
-
-
 }
 
-@media (min-width: 810px){
-    /*------------------------------*/
-    /* = Restaurants                */
-    /*------------------------------*/
-
+/************************************************************************/
+@media (min-width:var.$tablet){
     .contenaire{
         max-width: 810px;
         height: auto;
@@ -117,6 +105,10 @@
         &__menu{
             display: flex;        
         }
+    }
+    
+    .titre__align{
+        padding-left: 10px;
     }
 
     .align_txt{
@@ -151,12 +143,8 @@
 
 }
     
-@media (min-width: 1100px){
-
-    /*------------------------------*/
-    /* = Restaurants                */
-    /*------------------------------*/
-
+/************************************************************************/
+@media (min-width:var.$desktop){
     .resto-cards{
         height: 240px;
         width: 500px;
@@ -197,6 +185,10 @@
             justify-content: center;
             margin: auto;
         }
+    }
+    
+    .titre__align{
+        padding-left: 40px;
     }
 }
 

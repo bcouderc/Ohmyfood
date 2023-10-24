@@ -110,7 +110,6 @@ SOMMAIRE RESTAURANTS.SCSS
     display: flex;
     flex-direction: column;
     gap: 16px;
-
 }
 
 .menu{
@@ -121,11 +120,10 @@ SOMMAIRE RESTAURANTS.SCSS
     border-radius: 15.043px;
     background:var.$col-wht;
     box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
-    @include var.menu-txt;
 
     animation: appear 1s;
 
-    @for $i from 1 through 3{
+    @for $i from 1 through 4{
         &:nth-child(#{$i}) {
             animation-delay: 100ms *$i;
         }
@@ -137,7 +135,6 @@ SOMMAIRE RESTAURANTS.SCSS
     font-weight: 300;
     text-transform: uppercase; /*Mets en Majuscule le texte*/
     margin: 40px 0 5px 0;
-    @include var.menu-txt;
     }
 
     &__ss-titre{
@@ -146,7 +143,7 @@ SOMMAIRE RESTAURANTS.SCSS
         font-weight: 500;
         margin: 15px 0 0 15px;
         @include var.menu-txt;
-    }
+}
 
     &__txt{
         color: var.$col-blk;
@@ -167,7 +164,11 @@ SOMMAIRE RESTAURANTS.SCSS
             display: flex;
             align-items: flex-end;
             gap:15px;
+            padding-left: 100px;
         }
+    }
+    &__truncate-text{
+        @include var.menu-txt;
     }
 
     &__cloche{
@@ -185,7 +186,6 @@ SOMMAIRE RESTAURANTS.SCSS
     }
     
     &:hover &__cloche{
-        cursor: pointer;
         margin-right: 0;
     }
 }

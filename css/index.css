@@ -10,7 +10,15 @@ SOMMAIRE INDEX.SCSS
 /* VAR.SCSS */
 /* variables pour les couleurs */
 /* Variables pour les médias queries*/
-/* Mixins */
+/* Mixins - Keyframes */
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /*---------------------*/
 /* = Header            */
 /*---------------------*/
@@ -75,7 +83,7 @@ SOMMAIRE INDEX.SCSS
   left: -25px;
   background: var(--Background, #f6f6f6);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  transition: box-shadow 0.3 ease-out;
+  transition: box-shadow 0.5s ease-out;
 }
 .btn-fonct__align {
   display: flex;
@@ -83,8 +91,15 @@ SOMMAIRE INDEX.SCSS
   gap: 20px;
 }
 .btn-fonct:hover {
+  color: #9356DC;
   background: #fff;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.27);
+}
+.btn-fonct .fa-solid {
+  color: #7E7E7E;
+}
+.btn-fonct .fa-solid:hover {
+  color: #9356DC;
 }
 
 .btn-num {

@@ -13,7 +13,15 @@ SOMMAIRE BASE.SCSS
 /* VAR.SCSS */
 /* variables pour les couleurs */
 /* Variables pour les médias queries*/
-/* Mixins */
+/* Mixins - Keyframes */
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -145,16 +153,8 @@ a {
   -o-object-position: 0 -80px;
      object-position: 0 -80px;
 }
-.img-ledelice__2 {
-  -o-object-position: 0 -25px;
-     object-position: 0 -25px;
-}
 
 .img-alafrancaise {
   -o-object-position: 0 -80px;
      object-position: 0 -80px;
-}
-.img-alafrancaise__2 {
-  -o-object-position: 0 -20px;
-     object-position: 0 -20px;
 }
