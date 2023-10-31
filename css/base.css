@@ -8,6 +8,8 @@ SOMMAIRE BASE.SCSS
 5 - Positionnement images
 
 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap");
 /* VAR.SCSS */
 /* variables pour les couleurs */
 /* Variables pour les médias queries*/
