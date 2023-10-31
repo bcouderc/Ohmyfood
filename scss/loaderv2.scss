@@ -1,9 +1,11 @@
+@use 'var';
+
 /* LOADERV2.SCSS */
 .loader{
     position: fixed;
     display: grid;
     place-items: center;
-    background-color: white;
+    background-color:var.$col-wht;
     opacity: 0.9;
     height: 100vh;
     inset:0; /* écrite simplifiée pour top left right et bottom = 0*/

@@ -1,5 +1,4 @@
 /* VAR.SCSS */
-
     /* variables pour les couleurs */
     $col-loc:#EAEAEA;
     $col-pdpP:#353535;
@@ -25,13 +24,3 @@
         text-overflow: ellipsis; /* Ajoute une ellipse (...) à la fin du texte coupé */
     }
 
-
-    @keyframes appear {
-        0%{
-            transform: scale(0);
-        }
-        100%{
-            transform: scale(1);
-        }
-        
-    }
