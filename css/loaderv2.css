@@ -1,10 +1,14 @@
 @charset "UTF-8";
+/* VAR.SCSS */
+/* variables pour les couleurs */
+/* Variables pour les médias queries*/
+/* Mixins - Keyframes */
 /* LOADERV2.SCSS */
 .loader {
   position: fixed;
   display: grid;
   place-items: center;
-  background-color: white;
+  background-color: #fff;
   opacity: 0.9;
   height: 100vh;
   inset: 0; /* écrite simplifiée pour top left right et bottom = 0*/

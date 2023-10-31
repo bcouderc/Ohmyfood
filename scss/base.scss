@@ -127,10 +127,14 @@ a{
     }
 }
 
-/* Styles des icônes du pied de page */
+/* Styles des icônes */
 
-.fa-arrow-left{
+.fa-arrow-left, .fa-heart{
     color: var.$col-blk;
+}
+
+.fa-circle-check, .fa-utensils, .fa-handshake-angle{
+    color: var.$col-wht;
 }
 
 /*------------------------------*/

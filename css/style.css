@@ -1,9 +1,13 @@
 @charset "UTF-8";
-
+/* Import des fichiers de styles*/
 /* Polices de caractères Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap");
-
+/* VAR.SCSS */
+/* variables pour les couleurs */
+/* Variables pour les médias queries*/
+/* Mixins - Keyframes */
+/* Import des fichiers de styles*/
 /* 
 SOMMAIRE BASE.SCSS
 1 - Balises : h1, h2, h3, p, a, body
@@ -13,12 +17,6 @@ SOMMAIRE BASE.SCSS
 5 - Positionnement images
 
 */
-
-/* VAR.SCSS */
-/* variables pour les couleurs */
-/* Variables pour les médias queries*/
-/* Mixins - Keyframes */
-
 * {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -133,6 +131,15 @@ a {
   gap: 10px;
 }
 
+/* Styles des icônes */
+.fa-arrow-left, .fa-heart{
+  color: #000;
+}
+
+.fa-circle-check, .fa-utensils, .fa-handshake-angle {
+  color: #fff;
+}
+
 /*------------------------------*/
 /* = Positionnement des images  */
 /*------------------------------*/
@@ -156,6 +163,7 @@ a {
      object-position: 0 -80px;
 }
 
+/* Import des fichiers de styles*/
 /*
 SOMMAIRE INDEX.SCSS
 
@@ -357,12 +365,13 @@ SOMMAIRE INDEX.SCSS
   opacity: 1;
 }
 
+/* Import des fichiers de styles*/
 /* LOADERV2.SCSS */
 .loader {
   position: fixed;
   display: grid;
   place-items: center;
-  background-color: white;
+  background-color: #fff;
   opacity: 0.9;
   height: 100vh;
   inset: 0; /* écrite simplifiée pour top left right et bottom = 0*/
@@ -379,6 +388,7 @@ SOMMAIRE INDEX.SCSS
     transform: translatey(2000px);
   }
 }
+/* Import des fichiers de styles*/
 /*
 SOMMAIRE RESTAURANTS.SCSS
 1 - Header
@@ -477,6 +487,14 @@ SOMMAIRE RESTAURANTS.SCSS
 /*-----------------------*/
 /* = Vignettes des menus */
 /*-----------------------*/
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .plat {
   display: flex;
   flex-direction: column;
@@ -565,6 +583,7 @@ SOMMAIRE RESTAURANTS.SCSS
   margin-right: 0;
 }
 
+/* Import des fichiers de styles*/
 /************************************************************************/
 /* Medium devices
 /* - 1_smartphone min: 360px

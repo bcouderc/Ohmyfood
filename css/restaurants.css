@@ -12,7 +12,6 @@ SOMMAIRE RESTAURANTS.SCSS
 /* variables pour les couleurs */
 /* Variables pour les médias queries*/
 /* Mixins - Keyframes */
-
 /*-----------------------*/
 /* = Header              */
 /*-----------------------*/
@@ -102,6 +101,14 @@ SOMMAIRE RESTAURANTS.SCSS
 /*-----------------------*/
 /* = Vignettes des menus */
 /*-----------------------*/
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .plat {
   display: flex;
   flex-direction: column;

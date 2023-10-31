@@ -8,13 +8,10 @@ SOMMAIRE BASE.SCSS
 5 - Positionnement images
 
 */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap");
 /* VAR.SCSS */
 /* variables pour les couleurs */
 /* Variables pour les médias queries*/
 /* Mixins - Keyframes */
-
 * {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -127,6 +124,15 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+/* Styles des icônes */
+.fa-arrow-left, .fa-heart {
+  color: #000;
+}
+
+.fa-circle-check, .fa-utensils, .fa-handshake-angle {
+  color: #fff;
 }
 
 /*------------------------------*/
